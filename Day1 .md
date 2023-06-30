@@ -110,9 +110,9 @@ string made of **characters** , Characters are in a specific order Each gets a n
     "ibraheem".includes("i") // true
     // it return true if the character include in string or false if not
     ```
-- .startWith()
+- .startsWith()
     ```
-    "ibraheem".startWith("i") // true
+    "ibraheem".starstWith("i") // true
     // it return true if the string start with character or false if not
     ```
 
