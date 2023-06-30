@@ -43,7 +43,13 @@ document.getElementById("p1-name").append = " Zeer" // the output will change to
     "Hello" , 'Hello' , `Hello`
     ```
   + number
+    ```
+    10 , 10.5
+    ```
   + boolean
+    ```
+    true , false
+    ```
   + undefined
   + null
 + Objects
