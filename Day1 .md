@@ -115,16 +115,10 @@ string made of **characters** , Characters are in a specific order Each gets a n
     "ibraheem".starstWith("i") // true
     // it return true if the string start with character or false if not
     ```
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
+**Summary** , I learned what a string is and that it consists of a string of character and can use build-in function to get some benefits such as 
+```
+include
+indexOf
+startsWith
+```
