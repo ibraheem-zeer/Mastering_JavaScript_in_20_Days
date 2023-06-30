@@ -1,7 +1,7 @@
 # DOM
 ## Document Object Model
 ---
-we can use DOM to Read and Write(Edit) on HTML from JavaScript
+we can use DOM to Read and Write(Edit) on HTML from JavaScript4
 ---
 using document we can access to HTML code 
 ```
@@ -18,7 +18,7 @@ can use .children to get elements inside the tags
 document.body.children
 ```
 # **Also we can use**
-- .getElementById("any") , to Select first element of its Id is **any**
+- document.getElementById("any") , to Select first element of its Id is **any**
 - document.querySelector("#any") if id or (".any") if class , same as getElementById but has more flexibility
 - document.getElementsByTagName("any") , to select all elements has the same tag name
 - document.querySelectorAll("any") if tag , ("#any") if id , (".any") if class
@@ -35,6 +35,26 @@ document.getElementById("p1-name").textContent = "Ibraheem" // the output will c
 document.getElementById("p1-name").append = " Zeer" // the output will change to ibraheem Zeer
 ```
 ---
+**Summary** , i learned how to read and edit in html from js using some codes
+```
+// Exerci
+
+// [1] change player name to you & neighbor
+document.getElementById("p1-name").textContent = "ibraheem"
+document.getElementById("p1-name").append(" & neighbor")
+//======================================================================================
+// [2] Swap player Symbols
+document.getElementById("p1-symbol").textContent = "O"
+document.getElementById("p2-symbol").textContent = "X"
+//======================================================================================
+// [3] change Subtitle to "A game you know and love"
+document.querySelector("head h2").append = " and love"
+//======================================================================================
+document.title.indexOf("") // to pick the little who you search 
+document.title.include("") // to chisk if title have what you whant
+document.querySelector("head h1").style.textTransform= "uppercase" // Upper case for all
+```
+---
 # Values & Data Types
 **JavaScript has two kinds of Data**
 + primitive types
@@ -44,7 +64,7 @@ document.getElementById("p1-name").append = " Zeer" // the output will change to
     ```
   + number
     ```
-    10 , 10.5
+    10 , 10.5 , -10 , 10.21e9 , Infinity
     ```
   + boolean
     ```
@@ -53,3 +73,5 @@ document.getElementById("p1-name").append = " Zeer" // the output will change to
   + undefined
   + null
 + Objects
+---
+
