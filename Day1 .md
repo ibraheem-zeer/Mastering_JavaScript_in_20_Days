@@ -92,6 +92,13 @@ typeof(null) // object
 typeof(undefined) //undefined
 typeof(asd)       //undefined
 ```
+---
+# Strings
+string made of **characters** , Characters are in a specific order Each gets a number, starting at 0
+```
+"ibraheem"[0] // output = 'i'
+"ibraheem"[2] // output = 'r'
+```
 
 
 
