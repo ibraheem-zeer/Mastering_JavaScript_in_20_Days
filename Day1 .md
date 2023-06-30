@@ -117,8 +117,3 @@ string made of **characters** , Characters are in a specific order Each gets a n
     ```
 ---
 **Summary** , I learned what a string is and that it consists of a string of character and can use build-in function to get some benefits such as 
-```
-include
-indexOf
-startsWith
-```
