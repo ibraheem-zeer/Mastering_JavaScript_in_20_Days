@@ -89,9 +89,8 @@ typeof(false) // boolean
 //=============================
 typeof(null) // object
 //=============================
-typeof(undefined)  //undefined
-typeof(asd)        //undefined
-
+typeof(undefined) //undefined
+typeof(asd)       //undefined
 ```
 
 
