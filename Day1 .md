@@ -99,6 +99,22 @@ string made of **characters** , Characters are in a specific order Each gets a n
 "ibraheem"[0] // output = 'i'
 "ibraheem"[2] // output = 'r'
 ```
+**Some of Build-in function can use with strings**
+- .indexOf()
+    ```
+    "ibraheem".indexOf("h") // output = 4
+    // it return number of index for  character
+    ```
+- .include()
+    ```
+    "ibraheem".includes("i") // true
+    // it return true if the character include in string or false if not
+    ```
+- .startWith()
+    ```
+    "ibraheem".startWith("i") // true
+    // it return true if the string start with character or false if not
+    ```
 
 
 
