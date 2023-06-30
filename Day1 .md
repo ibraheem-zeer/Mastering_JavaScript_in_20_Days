@@ -34,3 +34,5 @@ document.getElementById("p1-name").textContent = "Ibraheem" // the output will c
 // to add text content
 document.getElementById("p1-name").append = " Zeer" // the output will change to ibraheem Zeer
 ```
+---
+# Values & Data Types
