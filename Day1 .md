@@ -17,6 +17,6 @@ can use .children to get elements inside the tags
 //this code will return all elements inside the body
 document.body.children
 ```
-#**Also we can use**
+# **Also we can use**
 .getElementById("any") , to Select first element of its Id is **any**
 
