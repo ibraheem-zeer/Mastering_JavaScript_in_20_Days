@@ -39,9 +39,9 @@ document.getElementById("p1-name").append = " Zeer" // the output will change to
 **JavaScript has two kinds of Data**
 + primitive types
   + string
-  ```
-  "Hello" , 'Hello' , `Hello`
-  ```
+    ```
+    "Hello" , 'Hello' , `Hello`
+    ```
   + number
   + boolean
   + undefined
