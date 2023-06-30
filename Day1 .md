@@ -36,3 +36,11 @@ document.getElementById("p1-name").append = " Zeer" // the output will change to
 ```
 ---
 # Values & Data Types
+**JavaScript has two kinds of Data**
++ primitive types
+  + string
+  + number
+  + boolean
+  + undefined
+  + null
++ Objects
