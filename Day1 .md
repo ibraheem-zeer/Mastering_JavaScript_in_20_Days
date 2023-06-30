@@ -7,6 +7,9 @@ useing document we can access to HTML code
 ```
 // this code will return the title of page
 document.title
+
+// also we can Edit title
+document.title = "New Title page"
 ```
 
 
