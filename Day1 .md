@@ -74,4 +74,35 @@ document.querySelector("head h1").style.textTransform= "uppercase" // Upper case
   + null
 + Objects
 ---
+can use Build-in function typeof() to know what is the type 
+```
+typeof("ibraheem") // string
+typeof('12345446') // string
+typeof(`true`)     // string
+//=============================
+typeof(1) // number
+typeof(-1) // number
+typeof(1.5) // number
+//=============================
+typeof(true) // boolean
+typeof(false) // boolean
+//=============================
+typeof(null) // object
+//=============================
+typeof(undefined)  //undefined
+typeof(asd)        //undefined
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
