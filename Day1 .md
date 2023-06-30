@@ -11,5 +11,12 @@ document.title
 // also we can Edit title
 document.title = "New Title page"
 ```
+---
+can use .children to get elements inside the tags
+```Ex:
+//this code will return all elements inside the body
+document.body.children
+```
+
 
 
