@@ -113,8 +113,9 @@ const Person = {
   major : "CS" ,
 }
 ```
-
-
+Objects collect multiple values together to describe more complex data
+Similar to how we can point at different values using variables in our code,
+objects let us point at related values using properties in the object.
 
 
 
