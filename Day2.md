@@ -152,7 +152,7 @@ objects let us point at related values using properties in the object.
 
 ---
 
-## Answer to Questions**
+## Answer to Questions
 
 Q1
 ```
