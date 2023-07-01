@@ -84,7 +84,23 @@ toFive.concat(toTen) // output = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
 
+---
 
+### different between Mutable and immutable
+- Mutable data can be edited
+- Immutable data always stays the same
+
+```
+let numbers1 = [1, 2, 3];
+let result1 = numbers1.push(4);
+numbers1; // output = [1, 2, 3, 4]
+
+//=============================================
+
+let numbers2 = [1, 2, 3];
+let result2 = numbers2.concat([4]);
+numbers2; // output = [1, 2, 3]
+```
 
 
 
