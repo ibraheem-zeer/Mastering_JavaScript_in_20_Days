@@ -109,7 +109,7 @@ numbers2; // output = [1, 2, 3]
 const Person = {
   fname : "ibraheem",
   lname : "zeer",
-  age : 22 ,
+  birthOfYear : 2000 ,
   major : "CS" ,
 }
 
