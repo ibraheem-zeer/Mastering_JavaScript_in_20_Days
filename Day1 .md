@@ -131,6 +131,14 @@ console.log("Java" + "Script") // output = JavaScript
 - ( * ) multiply
 - ( / ) divide
 
+example :
+```
+4 + 10 * 5 -3 + 1  // output = 52
+
+(4 + 10) * ((5 -3) + 1) //output = 42
+```
+
+
 
 
 
