@@ -109,13 +109,26 @@ numbers2; // output = [1, 2, 3]
 const Person = {
   fname : "ibraheem",
   lname : "zeer",
-  birthOfYear : 2000 ,
+  birthOfYear : 2001 ,
   major : "CS" ,
+  country : "Palestine" ,
+  ProgrammingLanguages : ["Java" , "PHP" , "Swift" , "Kotlin" , "JS" , "HTML" , "CSS" , "C++" ];
 }
 
 console.log(Person.fname , Person.lname) // out = ibraheem zeer
-console.log(Person.age) // out = 22
+console.log(Person.age) // out = 2001
 console.log(Person.major) // out = CS
+
+//================================================================================
+
+const indecisive = {
+    lunch: "sandwich"
+};
+indecisive.lunch = "tacos";
+indecisive.snack = "chips";
+
+indecisive.lunch // out = tacos
+indecisive.snack // out = chips
 ```
 Objects collect multiple values together to describe more complex data
 Similar to how we can point at different values using variables in our code,
