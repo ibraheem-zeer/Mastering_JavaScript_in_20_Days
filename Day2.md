@@ -113,6 +113,7 @@ const Person = {
   major : "CS" ,
   country : "Palestine" ,
   ProgrammingLanguages : ["Java" , "PHP" , "Swift" , "Kotlin" , "JS" , "HTML" , "CSS" , "C++" ];
+  frinds : [{name : "Hamza" , age : 21} , {name : "Marwan" , age : 22} , {name : "Husam" , age : 20}],
 }
 
 console.log(Person.fname , Person.lname) // out = ibraheem zeer
