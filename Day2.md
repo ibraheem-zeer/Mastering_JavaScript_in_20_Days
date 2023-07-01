@@ -102,6 +102,17 @@ let result2 = numbers2.concat([4]);
 numbers2; // output = [1, 2, 3]
 ```
 
+---
+# Objects
+
+```
+const Person = {
+  fname : "ibraheem",
+  lname : "zeer",
+  age : 22 ,
+  major : "CS" ,
+}
+```
 
 
 
