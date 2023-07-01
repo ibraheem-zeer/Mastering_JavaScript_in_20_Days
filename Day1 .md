@@ -126,10 +126,10 @@ console.log("Java" + "Script") // output = JavaScript
 ```
 
 # Arithmetic Operators
-- add +
-- subtract -
-- multiply *
-- divide /
+- (+) add
+- (-) subtract
+- (*) multiply
+- (/) divide
 
 
 
