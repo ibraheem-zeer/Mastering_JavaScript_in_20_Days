@@ -178,7 +178,21 @@ strict shold be the Same type and content
  ---
 
 
-#### Answers to questions
+#### Answers to questions :
+
+Q1 
+```
+a *= 5;
+b *= 3;
+c *= 10;
+```
+
+Q2
+```
+let myStr = "This is the first sentence." ;
+myStr += " ";
+myStr += "This is the second sentence.";
+```
 
 
 
