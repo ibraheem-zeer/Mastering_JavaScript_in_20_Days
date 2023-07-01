@@ -1,7 +1,7 @@
 # DOM
 ## Document Object Model
 ---
-we can use DOM to Read and Write(Edit) on HTML from JavaScript4
+we can use DOM to Read and Write(Edit) on HTML from JavaScript
 ---
 using document we can access to HTML code 
 ```
