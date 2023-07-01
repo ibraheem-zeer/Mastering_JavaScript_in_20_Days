@@ -49,6 +49,38 @@ console.log(name)   // output = ibraheem
 
 ```
 let programmingLang = ["C++" , "C#" , "Swift" , "Kotlin" , "JavsScript" , "TypeScript" , "Java" , "PHP" , "Dart"];
+
+// some properties
+
+// lingth , indexOf() , includes()
+programmingLang.length; // output = 9
+programmingLang[2]; // output = Swift
+programmingLang.indexOf("C#") // output = 1
+programmingLang.includes("PHP") // output = true
+
+//==================================================
+// pop() and push()
+let lastItem = programmingLang.pop()
+console.log(lastItem) // output = Dart;
+console.log(programmingLang) // output = same array but without Dart element
+programmingLang.push("HTML")
+console.log(programmingLang) // output = ["C++" , "C#" , "Swift" , "Kotlin" , "JavsScript" , "TypeScript" , "Java" , "PHP" , "HTML"];
+
+//==================================================
+// sort()
+let unSorted = ['e' , 'f' , 'b' , 'd' , 'c' , 'a'] ;
+unSorted.sort() // output = ['a' , 'b' , 'c' , 'd' , 'e' , 'f'];
+
+//==================================================
+// join()
+let arrName = ["ibraheem" , "hisham" , "mohammad" , "al zeer" , "al husaini"];
+arrName.join(" ") // output = 'ibraheem hisham mohammad al zeer al husaini'
+
+//==================================================
+// concat()
+let toFive = [1,2,3,4,5]
+let toTen = [6,7,8,9,10]
+toFive.concat(toTen) // output = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
 
