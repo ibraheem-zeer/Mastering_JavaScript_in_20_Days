@@ -20,3 +20,17 @@ lname = "zeer"; // Error
 - also_valid_but_less_common
 - Oddbut_Technicallyfine2
 - <s>0chanceThisWillWork!</s>
+---
+> best choice is camelCase
+---
+**What really are variables though?** , variables point to values
+---
+```
+let fname = "ibraheem"
+let name = fname;
+console.log(fname)  // output = ibraheem
+console.log(name)   // output = ibraheem
+fname = "zeer";
+console.log(fname)  // output = zeer
+console.log(name)   // output = ibraheem
+```
