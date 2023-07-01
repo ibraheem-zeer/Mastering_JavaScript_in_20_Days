@@ -173,6 +173,10 @@ strict shold be the Same type and content
 1 === "1"      //false
 ```
 
+**Summary** , There are many different operators about what it does such as concatenate operators , Arithmetic Operators , Comparison Operators , Equality operators and more
+ ---
+
+
 
 
 
