@@ -124,8 +124,9 @@ first of all we can use + operator to concatinate two strings or more
 console.log('ibraheem' + ' ' + 'Zeer') // output = ibraheem zeer
 console.log("Java" + "Script") // output = JavaScript
 ```
+---
 
-# Arithmetic Operators
+## Arithmetic Operators
 - ( + ) add
 - ( - ) subtract
 - ( * ) multiply
@@ -138,7 +139,7 @@ example :
 (4 + 10) * ((5 -3) + 1) //output = 42
 ```
 
-# Comparison Operators
+## Comparison Operators
 - ( > ) greater than
 - ( < ) less than
 - ( >= ) greater than or equal to
