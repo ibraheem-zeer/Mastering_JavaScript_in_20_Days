@@ -208,8 +208,17 @@ function forecast(arr) {
 // Only change code above this line
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 ```
+---
+Q3
+```
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning' , ...fragment , 'is' , 'fun']; // Change this line
+  return sentence;
+}
 
-
+console.log(spreadOut());
+```
 
 
 
