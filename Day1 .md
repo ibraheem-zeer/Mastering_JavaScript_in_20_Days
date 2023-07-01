@@ -175,8 +175,10 @@ strict shold be the Same type and content
 
 **Summary** , There are many different operators about what it does such as concatenate operators , Arithmetic Operators , Comparison Operators , Equality operators and more
  ---
+ ---
 
 
+#### Answers to questions
 
 
 
