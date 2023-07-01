@@ -112,6 +112,10 @@ const Person = {
   age : 22 ,
   major : "CS" ,
 }
+
+console.log(Person.fname , Person.lname) // out = ibraheem zeer
+console.log(Person.age) // out = 22
+console.log(Person.major) // out = CS
 ```
 Objects collect multiple values together to describe more complex data
 Similar to how we can point at different values using variables in our code,
