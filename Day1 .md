@@ -162,7 +162,16 @@ example :
 | === | == | equals |
 | !== | != | dose not equal |
 
-
+> difference between strict and loosey goosey
+strict shold be the Same type and content
+```
+1 === 1        //true
+1 == 1         //true
+"1" === "1"    //true
+"1" == "1"     //true
+1 == "1"       //true
+1 === "1"      //false
+```
 
 
 
