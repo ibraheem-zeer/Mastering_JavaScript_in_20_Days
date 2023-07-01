@@ -112,13 +112,18 @@ const Person = {
   birthOfYear : 2001 ,
   major : "CS" ,
   country : "Palestine" ,
-  ProgrammingLanguages : ["Java" , "PHP" , "Swift" , "Kotlin" , "JS" , "HTML" , "CSS" , "C++" ];
+  ProgrammingLanguages : ["Java" , "PHP" , "Swift" , "Kotlin" , "JS" , "HTML" , "CSS" , "C++" ],
   frinds : [{name : "Hamza" , age : 21} , {name : "Marwan" , age : 22} , {name : "Husam" , age : 20}],
+  fullName : function() {
+    console.log(this.fname , this.lname)
+  }
 }
 
 console.log(Person.fname , Person.lname) // out = ibraheem zeer
 console.log(Person.age) // out = 2001
 console.log(Person.major) // out = CS
+Person.fullName() // out = ibraheem zeer
+
 
 //================================================================================
 
@@ -131,6 +136,15 @@ indecisive.snack = "chips";
 indecisive.lunch // out = tacos
 indecisive.snack // out = chips
 ```
+
+### Math built-in objects
+```
+let randomNumber = Math.random();
+const pi = Math.PI;
+const five = Math.abs(-5);
+```
+
+
 Objects collect multiple values together to describe more complex data
 Similar to how we can point at different values using variables in our code,
 objects let us point at related values using properties in the object.
