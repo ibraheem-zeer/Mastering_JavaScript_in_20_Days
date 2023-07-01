@@ -42,3 +42,56 @@ console.log(name)   // output = ibraheem
 **Summary** , i learned what is variables and what is difference between let and const , understand how it work and what it can do
 
 ---
+
+# Arrays
+
+> keep multiple values together in a single collection
+
+```
+let programmingLang = ["C++" , "C#" , "Swift" , "Kotlin" , "JavsScript" , "TypeScript" , "Java" , "PHP" , "Dart"];
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
