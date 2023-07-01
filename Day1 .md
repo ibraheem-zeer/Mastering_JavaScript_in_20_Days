@@ -116,7 +116,7 @@ string made of **characters** , Characters are in a specific order Each gets a n
     // it return true if the string start with character or false if not
     ```
 ---
-**Summary** , I learned what a string is and that it consists of a string of character and can use build-in function to get some benefits such as 
+**Summary** , I learned what a string is and that it consists of a string of character and can use build-in function to get some benefits
 ---
 # Operators
 first of all we can use + operator to concatinate two strings or more
