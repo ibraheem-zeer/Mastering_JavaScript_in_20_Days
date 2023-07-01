@@ -186,13 +186,21 @@ a *= 5;
 b *= 3;
 c *= 10;
 ```
-
+---
 Q2
 ```
 let myStr = "This is the first sentence." ;
 myStr += " ";
 myStr += "This is the second sentence.";
 ```
+---
+Q3
+```
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+console.log(secondToLastLetterOfLastName)
+```
+
+
 
 
 
