@@ -17,7 +17,7 @@ can use .children to get elements inside the tags
 //this code will return all elements inside the body
 document.body.children
 ```
-# **Also we can use**
+## **Also we can use**
 - document.getElementById("any") , to Select first element of its Id is **any**
 - document.querySelector("#any") if id or (".any") if class , same as getElementById but has more flexibility
 - document.getElementsByTagName("any") , to select all elements has the same tag name
@@ -25,7 +25,7 @@ document.body.children
 - document.getElementsByClassName("")
 
 ---
-## using above codes , we can use it to change text content or add text content
+### using above codes , we can use it to change text content or add text content
 #### Examples
 ```
 // to change text content
@@ -93,7 +93,7 @@ typeof(undefined) //undefined
 typeof(asd)       //undefined
 ```
 ---
-# Strings
+## Strings
 string made of **characters** , Characters are in a specific order Each gets a number, starting at 0
 ```
 "ibraheem"[0] // output = 'i'
@@ -138,7 +138,7 @@ example :
 
 (4 + 10) * ((5 -3) + 1) //output = 42
 ```
-
+---
 ## Comparison Operators
 - ( > ) greater than
 - ( < ) less than
@@ -155,7 +155,12 @@ example :
 5 <= 5 //true
 ```
 
-
+---
+## Equality operators
+| Strict | loosey goosey | meaning |
+| ----------- | ----------- | ----------- |
+| === | == | equals |
+| !== | != | dose not equal |
 
 
 
