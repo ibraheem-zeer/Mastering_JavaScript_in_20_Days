@@ -138,7 +138,21 @@ example :
 (4 + 10) * ((5 -3) + 1) //output = 42
 ```
 
+# Comparison Operators
+- ( > ) greater than
+- ( < ) less than
+- ( >= ) greater than or equal to
+- ( <= ) less than or equal to
 
+example : 
+```
+5 > 4 // true
+5 < 4 // false
+4 < 5 // true
+4 > 5 // false
+5 >= 5 //true
+5 <= 5 //true
+```
 
 
 
