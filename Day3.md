@@ -64,9 +64,27 @@
 ---
 # Function
 The Function object provides methods for functions. In JavaScript, every function is actually a Function object.
+```
+// one parameter
+function half(x) {
+    return x / 2;
+}
 
+const five = half(10); // calling function
 
+// two parameter
 
+function add(x, y) {
+    return x + y;
+}
+add(2,3);
+
+// withot parameters
+function fullName () {
+    console.log("ibraheem zeer")
+}
+fullName();
+```
 
 
 
