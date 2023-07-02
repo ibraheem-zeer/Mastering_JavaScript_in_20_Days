@@ -84,13 +84,77 @@ function fullName () {
     console.log("ibraheem zeer")
 }
 fullName();
+
+
+//=================================================
+
+// return Values
+function square(x) {
+    return x * x; 
+}
+const nine = square(3);
+
+// without return
+function sayHello (name) {
+    console.log(`Hello ${name} , how are you`)
+}
+fullName("ibraheem");
 ```
 
+**Notes:**
+- Parameters should be named like variables, and behave like variables within the function body
+- JS is pretty loosey-goosey about extra arguments
 
+---
+## Arrow function
+```
+const square = x => x*x; // the name of => is fat Arrow , This code is same as function square(x) {retrun x * x}
 
+const fullName = (firstName, lastName) => firstName + " " + lastName
+fullName("ibraheem","zeer") // output = ibraheem zeer
 
+const add = (x , y) => {
+    let sum = x + y
+    console.log(`the summation = ${sum}`)
+}
+```
+---
+# Scope
 
+- JS it doesn't just matter what variables we declare , It also matters where we declare them Scope determines where variables are "in play"
+- Scopes are nested within the program The widest scope is the global scope Each function gets its own new scope within the scope where it was declared
+- Within each scope, you can access variables declared in a global scope But not those declared in a narrower scope
+- Variables declared with let can be modified from within a narrower scope , This can be useful, but also dangerous!
+---
+**Examples**
+```
+let planet = "Jupiter";
+function scopeOut() {
+    let planet = "Mars";
+    console.log("Inner planet:", planet);
+}
+scopeOut(); // output = Inner planet: Mars
+console.log("Outer planet:", planet); // output = Inner planet: Jupiter
 
+//=================================================================
+
+let globalVariable = "I live in global scope"; 
+function narrowerScope() {
+    console.log(globalVariable);
+    let localVariable = "I live in the function scope";
+}
+narrowerScope(); // output = I live in global scope
+console.log(localVariable); // Error
+
+//===================================================================
+
+let feeling = "free";
+function trap() {
+    feeling = "boxedIn";
+}
+trap();
+console.log(feeling); // output = boxedIn
+```
 
 
 
