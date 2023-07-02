@@ -156,20 +156,6 @@ trap();
 console.log(feeling); // output = boxedIn
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Answer to Questions
 ---
 Q1
