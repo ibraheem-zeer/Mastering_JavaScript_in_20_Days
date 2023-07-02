@@ -61,6 +61,9 @@
     };
 </script>
 ```
+---
+# Function
+The Function object provides methods for functions. In JavaScript, every function is actually a Function object.
 
 
 
