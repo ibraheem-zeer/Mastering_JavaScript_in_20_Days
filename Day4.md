@@ -74,6 +74,14 @@ if (0) {
 | treu | false | false |
 | false | true | false |
 | false | false | false |
+---
+## Logic Or
+| A | B | A && B |
+| ----------- | ----------- | ----------- |
+| true | true | true |
+| treu | false | true |
+| false | true | true |
+| false | false | false |
 
 
 
