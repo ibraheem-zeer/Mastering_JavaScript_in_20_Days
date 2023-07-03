@@ -171,8 +171,25 @@ const mels = spices.filter(s => s.name.includes("Mel"));
 {name: 'Mel B', nickname: 'Scary'} 
 {name: 'Mel C', nickname: 'Sporty'}
 ```
+---
+### spread(...)
+Is another neat trick for iterating over arrays it lets us take all the items in an array and spread around
+---
+- We can use it to put all the items from one array inside another array
+- We can also use it to pass all the items from an array as arguments to a function or method
+```
+const oldBurns = ["square", "wack"];
+const newBurns = ["basic", "dusty", "sus"];
+const burnBook = [...oldBurns, ...newBurns];
+const burnBook = oldBurns.concat(newBurns);
 
+//==================================================
 
+const skills = ["HTML", "CSS", "JS"];
+const newSkills = ["React", "TypeScript", "Node"]
+skills.push(...newSkills);
+console.log(...skills);
+```0
 
 
 
