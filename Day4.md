@@ -76,7 +76,7 @@ if (0) {
 | false | false | false |
 ---
 ## Logic Or
-| A | B | A && B |
+| A | B | A || B |
 | ----------- | ----------- | ----------- |
 | true | true | true |
 | treu | false | true |
