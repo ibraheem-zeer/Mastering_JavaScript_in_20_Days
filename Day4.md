@@ -139,9 +139,38 @@ for (let item of ["pop", 6, "squish"]) {
 }
 // output = string number string
 ```
+---
+# Map & Filter
+## Map
+Map : calls a function on each item in an array to create a new array
+```
+const spices = [
+    {name: "Emma", nickname: "Baby"},
+    {name: "Geri", nickname: "Ginger"},
+    {name: "Mel B", nickname: "Scary"},
+    {name: "Mel C", nickname: "Sporty"},
+    {name: "Victoria", nickname: "Posh"}
+];
+const nicknames = spices.map(s => s.nickname + " Spice");
+const names = spices.map(s => `${s.name} spice`) // thsi is more useful
+```
+---
+## Filter
+Filter : calls a true/false function on each item and creates a new array with only the items where the function returns true
 
-
-
+```
+const spices = [
+    {name: "Emma", nickname: "Baby"},
+    {name: "Geri", nickname: "Ginger"},
+    {name: "Mel B", nickname: "Scary"},
+    {name: "Mel C", nickname: "Sporty"},
+    {name: "Victoria", nickname: "Posh"}
+];
+const mels = spices.filter(s => s.name.includes("Mel"));
+// output = 0
+{name: 'Mel B', nickname: 'Scary'} 
+{name: 'Mel C', nickname: 'Sporty'}
+```
 
 
 
