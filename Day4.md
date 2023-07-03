@@ -67,6 +67,13 @@ if (0) {
 }
 ```
 ---
+## Logic And
+| A | B | A && B |
+| ----------- | ----------- | ----------- |
+| true | true | true |
+| treu | false | false |
+| false | true | false |
+| false | false | false |
 
 
 
