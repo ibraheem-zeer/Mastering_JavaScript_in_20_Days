@@ -112,7 +112,16 @@ The for statement creates a loop that consists of three optional expressions, en
 for (let count = 0; count <= 100; count += 10) {
     console.log(count);
 }
+
+//=================================================
+const numbers = [1,2,3];
+for (let n of numbers) {
+    console.log(n);
+}
+// output = 1 2 3
 ```
+
+
 
 
 
