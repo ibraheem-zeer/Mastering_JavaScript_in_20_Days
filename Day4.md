@@ -84,8 +84,35 @@ if (0) {
 | false | false | false |
 
 
+---
+## short condition
+JS also has a shortcut operator for writing quick conditionals
+```
+//syntax
+//condition ? valueIfTrue : valueIfFalse;
 
+// Real example :
+let mood = forecast === "sunny" ? "happy" : "sad";
+```
+---
+# Loop
+The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement to be executed in the loop.
+```
+//syntax
+//for (initialization; condition; afterthought)
+//  statement
+```
+---
+**for loops require us to:**
+- declare & initialize a loop counter
+- give a condition for the loop to keep running
+- describe how to change (usually increment) the counter each time
 
+```
+for (let count = 0; count <= 100; count += 10) {
+    console.log(count);
+}
+```
 
 
 
