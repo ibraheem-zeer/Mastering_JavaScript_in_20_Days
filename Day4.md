@@ -112,15 +112,33 @@ The for statement creates a loop that consists of three optional expressions, en
 for (let count = 0; count <= 100; count += 10) {
     console.log(count);
 }
+```
 
-//=================================================
+---
+## for ... of
+for ... of loops let us more easily iterate over items in a collection
+```
 const numbers = [1,2,3];
 for (let n of numbers) {
     console.log(n);
 }
 // output = 1 2 3
 ```
+---
+We can use for...of to iterate over characters in a string
+```
+for (let char of "ALOHA") {
+    console.log(char);
+}
+// output = A L O H A
 
+//==========================================================
+
+for (let item of ["pop", 6, "squish"]) {
+    console.log(typeof item);
+}
+// output = string number string
+```
 
 
 
