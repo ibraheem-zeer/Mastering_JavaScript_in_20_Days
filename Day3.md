@@ -23,10 +23,10 @@
         explanation: "Type of Array are Object",
     }
 
-    // TODO 3: Set the text of the statement element to the fact's statement
+    //TODO 3: Set the text of the statement element to the fact's statement
     statment.textContent = fact.statment;
 
-    // TODO 4: Declare disable & enable functions to set or remove the "disabled" attribute from a given button element
+    //TODO 4: Declare disable & enable functions to set or remove the "disabled" attribute from a given button element
     // disable(button) should set the button element's attribute "disabled" to the value ""
     const disable = button => {
         button.setAttribute("disabled", "true");
