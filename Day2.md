@@ -1,7 +1,7 @@
 # Expressions
 
 ## Variables
-```
+```javascript
 let remember = "sept. 21";
 const fname = "ibraheem";
 //=================================
@@ -29,7 +29,7 @@ fname.toLowerCase() // output = ibraheem
 ---
 **What really are variables though?** , variables point to values
 ---
-```
+```javascript
 let fname = "ibraheem"
 let name = fname;
 console.log(fname)  // output = ibraheem
@@ -47,7 +47,7 @@ console.log(name)   // output = ibraheem
 
 > keep multiple values together in a single collection
 
-```
+```javascript
 let programmingLang = ["C++" , "C#" , "Swift" , "Kotlin" , "JavsScript" , "TypeScript" , "Java" , "PHP" , "Dart"];
 
 // some properties
@@ -90,7 +90,7 @@ toFive.concat(toTen) // output = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 - Mutable data can be edited
 - Immutable data always stays the same
 
-```
+```javascript
 let numbers1 = [1, 2, 3];
 let result1 = numbers1.push(4);
 numbers1; // output = [1, 2, 3, 4]
@@ -105,7 +105,7 @@ numbers2; // output = [1, 2, 3]
 ---
 # Objects
 
-```
+```javascript
 const Person = {
   fname : "ibraheem",
   lname : "zeer",
@@ -138,7 +138,7 @@ indecisive.snack // out = chips
 ```
 
 ### Math built-in objects
-```
+```javascript
 let randomNumber = Math.random();
 const pi = Math.PI;
 const five = Math.abs(-5);
@@ -155,7 +155,7 @@ objects let us point at related values using properties in the object.
 ## Answer to Questions
 
 Q1
-```
+```javascript
 // Setup
 const contacts = [
   {
@@ -199,7 +199,7 @@ lookUpProfile("Akira", "likes");
 ```
 ---
 Q2
-```
+```javascript
 function forecast(arr) {
   // Only change code below this line
   return arr.slice(2, 4);
@@ -210,7 +210,7 @@ console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
 ```
 ---
 Q3
-```
+```javascript
 function spreadOut() {
   let fragment = ['to', 'code'];
   let sentence = ['learning' , ...fragment , 'is' , 'fun']; // Change this line
