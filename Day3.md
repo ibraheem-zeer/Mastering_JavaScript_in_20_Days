@@ -1,5 +1,5 @@
 # Quiz project
-```
+```javascript
 <script type="text/javascript">
     // TODO 1: Declare & assign variables pointing to the corresponding element(s)
     // statement should be the "statement" div
@@ -64,7 +64,7 @@
 ---
 # Function
 The Function object provides methods for functions. In JavaScript, every function is actually a Function object.
-```
+```javascript
 // one parameter
 function half(x) {
     return x / 2;
@@ -107,7 +107,7 @@ fullName("ibraheem");
 
 ---
 ## Arrow function
-```
+```javascript
 const square = x => x*x; // the name of => is fat Arrow , This code is same as function square(x) {retrun x * x}
 
 const fullName = (firstName, lastName) => firstName + " " + lastName
@@ -127,7 +127,7 @@ const add = (x , y) => {
 - Variables declared with let can be modified from within a narrower scope , This can be useful, but also dangerous!
 ---
 **Examples**
-```
+```javascript
 let planet = "Jupiter";
 function scopeOut() {
     let planet = "Mars";
@@ -159,7 +159,7 @@ console.log(feeling); // output = boxedIn
 ### Answer to Questions
 ---
 Q1
-```
+```javascript
 function timesFive(num) {
   return num * 5;
 }
@@ -168,7 +168,7 @@ const answer = timesFive(5);
 ```
 ---
 Q2
-```
+```javascript
 // Declare the myGlobal variable below this line
 
 const myGlobal = 10;
@@ -193,7 +193,7 @@ function fun2() {
 ```
 ---
 Q3
-```
+```javascript
 function myLocalScope() {
   // Only change code below this line
   var myVar = "ibraheem"
@@ -207,7 +207,7 @@ console.log('outside myLocalScope', myVar);
 ```
 ---
 Q4
-```
+```javascript
 // Setup
 const outerWear = "T-Shirt";
 
@@ -222,7 +222,7 @@ myOutfit();
 ```
 ---
 Q5
-```
+```javascript
 function nextInLine(arr, item) {
   // Only change code below this line
   arr.push(item);
