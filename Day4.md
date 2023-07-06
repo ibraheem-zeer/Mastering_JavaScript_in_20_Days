@@ -2,7 +2,7 @@
 
 We can detect events with JS using an event listener The **.addEventListener()**
 
-```
+```javascript
 document.addEventListener("click", () => {
     console.log("clicked")
 });
