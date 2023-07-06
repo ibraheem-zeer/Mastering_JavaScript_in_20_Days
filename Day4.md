@@ -189,30 +189,7 @@ const skills = ["HTML", "CSS", "JS"];
 const newSkills = ["React", "TypeScript", "Node"]
 skills.push(...newSkills);
 console.log(...skills);
-```0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 **Answer to questions**
 ---
 Q1
