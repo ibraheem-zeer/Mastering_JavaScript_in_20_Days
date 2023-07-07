@@ -83,6 +83,16 @@ response.json()
 //  this is just a conventional format that js knows how to read
 ```
 
+```javascript
+let response = await fetch("https://dog.ceo/api/breed/hound/list");
+let body = await response.json();
+
+// to capture that calue as a variable like body
+// body will be Object 
+```
+
+
+
 
 
 
