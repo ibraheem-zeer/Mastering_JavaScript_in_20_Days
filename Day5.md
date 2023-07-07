@@ -52,15 +52,21 @@ APIs provide URLs that point at data we care about
 Some time we need data from elsewhere on the web and we can do that by accessing URL , API
 ---
 fetch() : build in function to lode data from APIs in js
+---
+Promises : something that comes into play in js when we are doing things that take a long time or looking for things that we are going to need some time to find.
+
 ```javascript
 fetch("https://dog.ceo/api/breed/hound/list")
 // output = Promise { <state>: "pending" }
 ```
 ---
-Promises : something that comes into play in js when we are doing things that take a long time or looking for things that we are going to need some time to find.
+**Promises can be in 3 possible states:**
 
+- `pending`: still waiting for the value, hang tight
 
+- `fulfilled` (aka "resolved"): finally got the value, all done
 
+- `rejected`: sorry couldn't get the value, all done It takes time for Promises to resolve, so they are  "asynchronous"
 
 
 
