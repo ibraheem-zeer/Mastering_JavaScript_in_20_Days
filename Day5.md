@@ -232,7 +232,7 @@ syntax
 ---
 
 ## Import & Export
-`export` :  lets us expose variables from our module's scope to the outside world
+**`export`** :  lets us expose variables from our module's scope to the outside world
 ```javascript
 // myModule.js
 const veryUsefulFunction = () => "I came from a module";
@@ -240,7 +240,11 @@ export { veryUsefulFunction };
 ```
 ---
 **`import`** : lets us use an exposed variable from another module
-
+```javascript
+// otherModule.js
+import { veryUsefulFunction } from './myModule.js'
+veryUsefulFunction();
+```
 
 
 
