@@ -76,7 +76,7 @@ await : tell JS to stop and wait for an asynchronous operation to finish
 let response = await fetch("https://dog.ceo/api/breed/hound/list");
 console.log(response);
 ```
-**Note : [a] 200 mean => ok , [b] 404 mean => not Found***
+>**Note : [a] 200 mean => ok , [b] 404 mean => not Found***
 ---
 
 
