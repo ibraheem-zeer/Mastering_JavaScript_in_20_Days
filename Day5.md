@@ -211,13 +211,13 @@ const paragraph = document.body.appendChild(document.createElement("p"));
 # Modules
 to use await outside of a function This isn't usually possible in JS
 ```html
-/*
+<!--
 syntax
 <script type="module">
 	//something
 </script>
-*/
-/*=============================================================*/
+-->
+<!--=============================================================== -->
 
 <script>
     await fetch("https://dog.ceo/api/breed/hound/list");
