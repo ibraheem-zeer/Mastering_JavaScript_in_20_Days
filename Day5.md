@@ -17,3 +17,35 @@ Usually, our JS code does things that are very quick So JS can usually run strai
 console.log("This will print in a New York minute");
 console.log("This will print one New York minute later");
 ```
+But when we need to do something that takes a long time JS can only do one task at a time ("single-threaded") So when we give JS a task that takes a while, it doesn't stop and wait
+```javascript
+console.log("This will print first");
+setTimeout(() => console.log("This will print third"), 1000);
+console.log("This will print second");
+```
+---
+**Some things that take time:**
+- eventsAsking a user to pick a file
+
+- Getting permission to access the camera/mic
+
+- Loading data from the interwebs
+
+---
+
+# data Fetching & promises
+APIs provide URLs that point at data we care about
+```json
+{
+    "message": [
+      "afghan",
+      "basset",
+      "blood",
+      "english",
+      "ibizan",
+      "plott",
+      "walker"
+    ],
+    "status": "success"
+  }
+```
