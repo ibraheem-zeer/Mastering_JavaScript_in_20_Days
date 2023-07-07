@@ -68,7 +68,16 @@ fetch("https://dog.ceo/api/breed/hound/list")
 
 - `rejected`: sorry couldn't get the value, all done It takes time for Promises to resolve, so they are  "asynchronous"
 
+---
 
+await : tell JS to stop and wait for an asynchronous operation to finish
+
+```javascript
+let response = await fetch("https://dog.ceo/api/breed/hound/list");
+console.log(response);
+```
+**Note : [a] 200 mean => ok , [b] 404 mean => not Found***
+---
 
 
 
