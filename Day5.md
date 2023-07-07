@@ -76,8 +76,12 @@ await : tell JS to stop and wait for an asynchronous operation to finish
 let response = await fetch("https://dog.ceo/api/breed/hound/list");
 console.log(response);
 ```
->**Note : [a] 200 mean => ok , [b] 404 mean => not Found***
+>**Note : [a] 200 mean => ok , [b] 404 mean => not Found**
 ---
+```javascript
+response.json()
+//  this is just a conventional format that js knows how to read
+```
 
 
 
