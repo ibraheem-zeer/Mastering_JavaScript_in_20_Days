@@ -90,14 +90,80 @@ let body = await response.json();
 // to capture that calue as a variable like body
 // body will be Object 
 ```
+---
+# Destructuring
+Destructuring is a fancy way of declaring multiple variables at once
+```javascript
+const sp = [
+    {name : "ibraheem" , nicname : "ibra" },
+]
 
+let {name , nicname } = sp[0]
 
+// name = ibraheem
+// nicname = ibra
 
+//========================================
 
+let {nicname} = sp[0]
+// it just care about nicname only
+// if we try to to get naem will return ""
+```
+---
+```javascript
+let [one , two , three] = [1 , 2 , 3]
 
+// one => 1 
+// two => 2 
+// three => 3
 
+let [six , five , four ] = [6 , 5 , 4]
+```
+We can ignore the values in the array we don't need 
+```javascript
+const [,,thirty] = [10 , 20 , 30 , 40 ]
 
+// thirty => 30
 
+let {title} = document
+// title ... the output = title of page 
+
+let [one , ...others] = [1,2,3,4,5,6,7,8,9]
+
+// one => 1 
+// others => [2, 3, 4, 5, 6, 7, 8, 9]
+```
+---
+`split()` method takes a pattern and divides a String into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array
+
+```javascript
+"ibraheem Zeer".split('ee')
+// output = ['ibrah', 'm Z', 'r']
+//====================================
+"ibraheem Zeer".split('ee')[1]
+// output = 'm z'
+```
+---
+`reverse()` method reverses an array in place and returns the reference to the same array, the first array element now becoming the last, and the last array element becoming the first. In other words, elements order in the array will be turned towards the direction opposite to that previously stated.
+
+```javascript
+let splitArray = "poodle-standered".split("-")
+splitArray // output = ['poodle', 'standered']
+
+splitArray.reverse()
+splitArray // output = ['standered', 'poodle']
+```
+---
+`trim()` method removes whitespace from both ends of a string and returns a new string, without modifying the original string.
+```javascript
+let [brd , sbrd] = "beagle".split("-")
+// when use join(" ") the space will return with output
+[undefined , "beagle"].join(" ") // ' beagle' , the space is here
+
+// use trim to fix the problem
+[undefined , "beagle"].join(" ").trim();
+// output = beagle // The space has been removed
+```
 
 
 
