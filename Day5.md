@@ -164,13 +164,35 @@ let [brd , sbrd] = "beagle".split("-")
 [undefined , "beagle"].join(" ").trim();
 // output = beagle // The space has been removed
 ```
+---
+# Async
+`async` : function declaration creates a binding of a new async function to a given name. The await keyword is permitted within the function body, enabling asynchronous, promise-based behavior to be written in a cleaner style and avoiding the need to explicitly configure promise chains
+```javascript
+function fetchResponse(url) {
+    const response = await fetch(url);
+    return response;
+}
+// this code will return Error because we use await without async
+// We need to make it an async function
+async function fetchResponse(url) {
+    const response = await fetch(url);
+    return response;
+}
+// This tells JS to expect to await async operations inside the function
+```
 
-
-
-
-
-
-
+```javascript
+// Full function use async ... await and return message such as array 
+async function fetchMessage(url) {
+    const response = await fetch(url)
+    const body = await response.json()
+    const { message } = body;
+    return message;
+};
+```
+---
+## createElement() method
+`document.createElement()` method creates the HTML element specified by __tagName__
 
 
 
