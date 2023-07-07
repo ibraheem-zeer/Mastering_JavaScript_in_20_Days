@@ -193,9 +193,20 @@ async function fetchMessage(url) {
 ---
 ## createElement() method
 `document.createElement()` method creates the HTML element specified by __*tagName*__
+```javascript
+createElement(tagName)
+```
+---
+## appendChild() method
+`appendChild()` method of the Node interface adds a node to the end of the list of children of a specified parent node
+```javascript
+appendChild(aChild)
 
+//======================
 
-
+const paragraph = document.body.appendChild(document.createElement("p"));
+// You can append more elements to the paragraph later
+```
 
 
 
