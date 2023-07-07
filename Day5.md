@@ -207,7 +207,23 @@ appendChild(aChild)
 const paragraph = document.body.appendChild(document.createElement("p"));
 // You can append more elements to the paragraph later
 ```
+---
+# Modules
+to use await outside of a function This isn't usually possible in JS
+```html
+<script type="module">
+	//something
+</script>
 
+//======================================
+
+<script>
+    await fetch("https://dog.ceo/api/breed/hound/list");
+    // this will return Error 
+</script>
+
+
+```
 
 
 
