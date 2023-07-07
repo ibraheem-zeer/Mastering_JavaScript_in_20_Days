@@ -10,3 +10,10 @@ while (fiveRandomNumbers.length < 5) {
 // output = 5 random numbers
 
 ```
+---
+## setTimeout
+Usually, our JS code does things that are very quick So JS can usually run straight through our program "synchronously"
+```javascript
+console.log("This will print in a New York minute");
+console.log("This will print one New York minute later");
+```
