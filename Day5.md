@@ -245,6 +245,91 @@ export { veryUsefulFunction };
 import { veryUsefulFunction } from './myModule.js'
 veryUsefulFunction();
 ```
+---
+## Debugging
+we could use to kind of check out understanding of what’s happening in our code is to log things to the console
+---
+console.log() (or  .warn()  or  .error() ) is one way to understand what's happening when your program runs
+```javascript
+function whyIsntThisWorking(input) {
+    console.log("Well at least we got this far");
+    console.log(input);
+    return thingThatDoesntWork(input);
+}
+
+//=====================================================================
+we can also use the browser's debugger to  pause JS and inspect what's happening
+
+function whyIsntThisWorking(input) {
+    debugger;
+    return thingThatDoesntWork(input);
+}
+
+// we can show the debug in Inspect then Debugger
+// then we can show the message of dubug
+
+//debugger statement creates a breakpoint where JS will pause and let you look around
+```
+## Error Handling
+Usually errors will cause JS to stop running our code
+```javascript
+thisThrowsAnError();
+console.log("I'll never get here");
+
+/*
+Sometimes that's appropriate and what we want JS to do , But sometimes we might want to try again, or try a different way Or 	if it was optional, just skip it and move on with our (program's) lives
+*/
+```
+---
+### use try & catch
+```javascript
+try {
+    thisMightThrowAnError(); // if there are Error will enter to catch if not will keep running
+} catch (error) { // there are Error
+    console.error("As if! Error:", error); 
+    console.log("Whatever, let's press on anyway");
+}
+console.log("still rollin' with the homies"); // keep running
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
