@@ -223,11 +223,23 @@ syntax
     await fetch("https://dog.ceo/api/breed/hound/list");
     // this will return Error 
 </script>
-
-
 ```
+---
+**JS modules work differently from JS scripts**
+- we can't use await outside of a function in a script
+- modules create their own scope
 
+---
 
+## Import & Export
+`export` :  lets us expose variables from our module's scope to the outside world
+```javascript
+// myModule.js
+const veryUsefulFunction = () => "I came from a module";
+export { veryUsefulFunction };
+```
+---
+**`import`** : lets us use an exposed variable from another module
 
 
 
