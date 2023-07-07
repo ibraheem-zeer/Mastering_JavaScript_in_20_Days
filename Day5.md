@@ -192,7 +192,7 @@ async function fetchMessage(url) {
 ```
 ---
 ## createElement() method
-`document.createElement()` method creates the HTML element specified by *tagName*
+`document.createElement()` method creates the HTML element specified by __*tagName*__
 
 
 
