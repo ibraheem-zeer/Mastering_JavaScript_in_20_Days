@@ -49,3 +49,42 @@ APIs provide URLs that point at data we care about
     "status": "success"
   }
 ```
+Some time we need data from elsewhere on the web and we can do that by accessing URL , API
+---
+fetch() : build in function to lode data from APIs in js
+```javascript
+fetch("https://dog.ceo/api/breed/hound/list")
+// output = Promise { <state>: "pending" }
+```
+---
+Promises : something that comes into play in js when we are doing things that take a long time or looking for things that we are going to need some time to find.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
