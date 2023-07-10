@@ -17,15 +17,15 @@ async function fetchRaM() {
         slicedData.forEach(ele => {
             const { name, image, location, species, gender } = ele;
             const li = document.createElement("li");
-            const n = document.createElement('span');
+            const n = document.createElement('p');
             n.textContent = `Name : ${name}`;
             const i = document.createElement('img');
             i.setAttribute("src", image)
-            const l = document.createElement('span');
+            const l = document.createElement('p');
             l.textContent = `From : ${location.name}`;
             const s = document.createElement('p');
             s.textContent = `species : ${species}`;
-            const g = document.createElement('span');
+            const g = document.createElement('p');
             g.textContent = `Gender : ${gender}`;
             li.appendChild(i)
             li.appendChild(n)
