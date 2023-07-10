@@ -39,7 +39,7 @@ p {
     font-weight: bold;
 }
 
-span.gender {
+p.gender {
     text-transform: capitalize;
 }
 
