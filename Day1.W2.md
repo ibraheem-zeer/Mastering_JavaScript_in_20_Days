@@ -10,6 +10,7 @@ const result = inputNumber*2;
 return result;
 }
 const output = multiplyBy2(num);
+const newOutput = multiplyBy2(10);
 
 //*********** Memory ******************
 // num : 3
@@ -19,12 +20,22 @@ const output = multiplyBy2(num);
 ```
 > output will join to block
 ## Global execution context
+#### output = multiplyBy2(3)
 |  | Memory |
 | ----------- | -----------
 |  | input num : 3 | 
 |  | result : 6 |
 |  |  |
 | return result |  |
+
+#### output = multiplyBy2(3)
+|  | Memory |
+| ----------- | -----------
+|  | input num : 3 | 
+|  | result : 6 |
+|  |  |
+| return result |  |
+
 
 **Note : after return result the output will gose to function and  the output Evaluated to 6**
 > parameters , Arguments , Evaluate 
