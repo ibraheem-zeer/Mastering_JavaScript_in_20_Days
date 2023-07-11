@@ -16,12 +16,12 @@ const newOutput = multiplyBy2(10);
 // num : 3
 // multyplayBy2 : f
 // output : 6
-
+// newOutput : 20
 ```
 > output will join to block
 ## Global execution context
 #### output = multiplyBy2(3)
-|  | Memory |
+|  | Local Memory |
 | ----------- | -----------
 |  | input num : 3 | 
 |  | result : 6 |
@@ -29,13 +29,13 @@ const newOutput = multiplyBy2(10);
 | return result |  |
 
 #### output = multiplyBy2(3)
-|  | Memory |
+|  | Local Memory |
 | ----------- | -----------
-|  | input num : 3 | 
-|  | result : 6 |
+|  | input num : 10 | 
+|  | result : 20 |
 |  |  |
 | return result |  |
 
 
-**Note : after return result the output will gose to function and  the output Evaluated to 6**
+**Note : after return result the output will gose to function and  the output Evaluated to 6 , then 20**
 > parameters , Arguments , Evaluate 
