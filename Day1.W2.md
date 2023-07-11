@@ -55,10 +55,11 @@ They can co-exist with and can be treated like any other javascript object
 1. Assigned to variables and properties of other objects
 2. Passed as arguments into functions
 3. Returned as values from functions
-
+---
 Higer Order function : The outer function that takes in a function is our higher-order function
 ---
 Callback function : The function we insert is our callback function
+---
 ```javascript
 function copyArrayAndManipulate(array, instructions) {
  const output = [];
