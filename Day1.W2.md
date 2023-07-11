@@ -25,5 +25,7 @@ const output = multiplyBy2(num);
 |  | result : 6 |
 |  |  |
 | return result |  |
+
+---
 **Note : after return result the output will gose to function and  the output Evaluated to 6**
 > parameters , Arguments , Evaluate 
