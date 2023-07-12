@@ -78,13 +78,15 @@ const result = copyArrayAndManipulate([1, 2, 3], multiplyBy2);
 ---
 **Answer to Questions**
 ---
-#### Q1
-[This is an external link to genome.gov](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem)
+Q1
+[Q1](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem)
 ```javascript
 const a = arr.filter(num => num > 0 && num % parseInt(num) === 0)
   .map(num => Math.pow(num , 2))
   return a
 ```
+---
+Q2
 
 
 
