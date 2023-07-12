@@ -75,8 +75,60 @@ const result = copyArrayAndManipulate([1, 2, 3], multiplyBy2);
 // callback function is : multiplyBy2
 ```
 ---
-**out of course**
-`reduce()` method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value
+**out of course** : `reduce()` method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value
+```javascript
+/*
+  Syntax
+  reduce(callBackFunc(Accumulator, Current Val, Current Index, Source Array) { }, initialValue)
+  - Accumulator => the accumulated value previously returned in the last invocation
+  - Current Val => The current element being processed in the array
+  - Index => The index of the current element being processed in the array.
+  ---------- Starts from index 0 if an initialValue is provided.
+  ---------- Otherwise, it starts from index 1.
+  - Array => The Current Array
+*/
+
+//*************** Examples *********************************
+let nums = [10, 20, 15, 30];
+
+let add = nums.reduce(function (acc, current, index, arr) {
+  console.log(`Acc => ${acc}`);
+  console.log(`Current Element => ${current}`);
+  console.log(`Current Element Index => ${index}`);
+  console.log(`Array => ${arr}`);
+  console.log(acc + current);
+  console.log(`#############`);
+  return acc + current;
+}, 5);
+
+console.log(add);
+
+//===============================================================
+
+let theBiggest = ["Bla", "Propaganda", "Other", "AAA", "Battery", "Test", "Propaganda_Two"];
+
+let check = theBiggest.reduce(function (acc, current) {
+  console.log(`Acc => ${acc}`);
+  console.log(`Current Element => ${current}`);
+  console.log(acc.length > current.length ? acc : current);
+  console.log(`#############`);
+  return acc.length > current.length ? acc : current;
+});
+console.log(check);
+//==================================================================================
+let removeChars = ["I", "B", "R", "@", "A", "@", "@", "H", "E", "@", "E" , "M"];
+
+let finalString = removeChars
+  .filter(function (ele) {
+    return ele !== "@";
+  })
+  .reduce(function (acc, current) {
+    return `${acc}${current}`;
+  });
+
+console.log(finalString..toLowerCase());
+
+```
 ---
 ---
 **Answer to Questions**
