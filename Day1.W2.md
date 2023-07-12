@@ -74,7 +74,10 @@ const result = copyArrayAndManipulate([1, 2, 3], multiplyBy2);
 // Higer order function is : copyArrayAndManipulate
 // callback function is : multiplyBy2
 ```
-
+---
+**out of course**
+`reduce()` method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value
+---
 ---
 **Answer to Questions**
 ---
