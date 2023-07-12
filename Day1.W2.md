@@ -142,7 +142,8 @@ const a = arr.filter(num => num > 0 && num % parseInt(num) === 0)
 ---
 [Q2](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/apply-functional-programming-to-convert-strings-to-url-slugs)
 ```
-
+let editSrting =  title.split(" ").filter(ele => ele !== "").join("-").toLowerCase()
+    return editSrting
 ```
 
 
