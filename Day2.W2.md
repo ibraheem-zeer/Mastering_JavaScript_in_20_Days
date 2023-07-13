@@ -78,20 +78,27 @@ myNewFunction();
 
 ```javascript
 function outer (){
- let counter = 0;
- function incrementCounter (){
- counter ++;
- }
- return incrementCounter;
+   let counter = 0;
+   function incrementCounter (){
+   counter ++;
+   }
+   return incrementCounter;
 }
 const myNewFunction = outer();
 myNewFunction();
 myNewFunction();
+
 const anotherFunction = outer();
 anotherFunction();
 anotherFunction();
 ```
-
+**Individual backpacks** : if we run outer again and store the returned incrementCounter fun definition in anotherFunction , this new incrementCounter fun was created in a new execution context and threrfore has a brand new independent backpack
+---
+**Clousre gives our fun persistent memories and entrely new toolkit for writing professional code**
+- `Helper functions:` Everyday professional helper functions like ‘once’ and ‘memoize’
+`Iterators and generators:` Which use lexical scoping and closure to achieve the most contemporary patterns for handling data in JavaScript
+`Module pattern:` Preserve state for the life of an application without polluting the global namespace
+`Asynchronous JavaScript:` Callbacks and Promises rely on closure to persist state in an asynchronous environment
 
 
 
