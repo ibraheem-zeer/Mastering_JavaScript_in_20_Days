@@ -100,6 +100,9 @@ anotherFunction();
 - `Module pattern:` Preserve state for the life of an application without polluting the global namespace
 - `Asynchronous JavaScript:` Callbacks and Promises rely on closure to persist state in an asynchronous environment
 
+---
+scope : is the rules in any programming lang for at any given line of code , what data do i have available to me 
+
 
 
 
