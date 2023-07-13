@@ -147,7 +147,18 @@ When we call the function that returns an object with new in front we automate 2
 1. Create a new user object
 2. Return the new user object
 
+```
+function userCreator(name, score) {
+ this.name = name;
+ this.score = score;
+};
+userCreator.prototype // {Empty};
+userCreator.prototype.increment = function(){
+ this.score++;
+}
+const user1 = new userCreator("Will", 3);
 
+```
 
 
 
