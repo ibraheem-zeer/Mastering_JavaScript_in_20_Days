@@ -130,6 +130,9 @@ console.log(finalString..toLowerCase());
 
 ```
 ---
+- Declarative readable code: Map, filter, reduce - the most readable way to write code to work with data
+- Codesmith & pro interview prep: One of the most popular topics to test in interview both for Codesmith and mid/senior level job interviews
+
 ---
 **Answer to Questions**
 ---
