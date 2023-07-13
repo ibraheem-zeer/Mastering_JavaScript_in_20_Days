@@ -88,6 +88,13 @@ Hold promise-deferred functions in a microtask queue and callback function in a 
 
 Prioritize functions in the microtask queue over the Callback queue
 
+---
+
+`Non-blocking applications:` This means we don’t have to wait in the single thread and don’t block further code from running
+
+`However long it takes:` We cannot predict when our Browser feature’s work will finish so we let JS handle automatically running the function on its completion
+
+`Web applications:` Asynchronous JavaScript is the backbone of the modern web - letting us build fast ‘non-blocking’ applications
 
 
 
