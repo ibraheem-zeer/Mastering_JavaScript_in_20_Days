@@ -83,12 +83,10 @@ input being the returned data
 ---
 We have rules for the execution of our asynchronously delayed code
 
-`Hold promise-deferred functions in a microtask queue and callback function in a
-task queue (Callback queue) when the Web Browser Feature (API) finishes
-Add the function to the Call stack (i.e. run the function) when:
-- Call stack is empty & all global code run (Have the Event Loop check this
-condition)
-Prioritize functions in the microtask queue over the Callback queue`
+Hold promise-deferred functions in a microtask queue and callback function in a task queue (Callback queue) when the Web Browser Feature (API) finishes Add the function to the Call stack (i.e. run the function) when:
+- Call stack is empty & all global code run (Have the Event Loop check this condition)
+
+Prioritize functions in the microtask queue over the Callback queue
 
 
 
