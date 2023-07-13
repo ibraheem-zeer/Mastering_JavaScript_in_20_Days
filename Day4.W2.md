@@ -33,4 +33,66 @@ user3.increment = function() {
 };
 ```
 
-**Solutions : **
+**Solutions :**
+### Generate Object using function
+- Problems : Each time we create a new user we make space in our computer's memory for all our data and functions. But our functions are just copies
+
+- Benegits :  Simple and easy
+```javasctipt
+function userCreator(name, score) {
+ const newUser = {};
+ newUser.name = name;
+ newUser.score = score;
+ newUser.increment = function() {
+ newUser.score++;
+ };
+ return newUser;
+};
+const user1 = userCreator("Will", 3);
+const user2 = userCreator("Tim", 5);
+user1.increment()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
