@@ -72,7 +72,7 @@ Special objects built into JavaScript that get returned immediately when we make
 
 Any code we want to run on the returned data must also be saved on the promise object Added using `.then` method to the hidden property ‘onFulfilment’ Promise objects will automatically trigger the attached function to run (with its
 input being the returned data
----
+
 - Problems
   + 99% of developers have no idea how they’re working under the hood
   + Debugging becomes super-hard as a result
@@ -80,9 +80,15 @@ input being the returned data
 - Benefits
   + Cleaner readable style with pseudo-synchronous style code
   + Nice error handling process
+---
+We have rules for the execution of our asynchronously delayed code
 
-
-
+`Hold promise-deferred functions in a microtask queue and callback function in a
+task queue (Callback queue) when the Web Browser Feature (API) finishes
+Add the function to the Call stack (i.e. run the function) when:
+- Call stack is empty & all global code run (Have the Event Loop check this
+condition)
+Prioritize functions in the microtask queue over the Callback queue`
 
 
 
