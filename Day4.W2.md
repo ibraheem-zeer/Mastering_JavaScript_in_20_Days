@@ -34,7 +34,7 @@ user3.increment = function() {
 ```
 
 **Solutions :**
-### Generate Object using function
+### Generate Object using `function`
 - Problems : Each time we create a new user we make space in our computer's memory for all our data and functions. But our functions are just copies
 
 - Benegits :  Simple and easy
@@ -53,7 +53,7 @@ const user2 = userCreator("Tim", 5);
 user1.increment()
 ```
 ---
-### Using the prototype chain
+### Using the `prototype chain`
 Store the increment function in just one object and have the interpreter, if it doesn't find the function on user1, look up to that object to check if it's there Link user1 and functionStore so the interpreter, on not finding .increment, makes sure to check up in functionStore where it would find it
 ```javascript
 function userCreator (name, score) {
@@ -144,7 +144,7 @@ const user2 = userCreator("Tim", 5);
 user1.increment();
 ```
 ---
-### Using new
+### Using `new`
 When we call the function that returns an object with new in front we automate 2 things
 1. Create a new user object
 2. Return the new user object
@@ -177,7 +177,7 @@ user1.increment()
 - Problems:
   + 95% of developers have no idea how it works and therefore fail interviews We have to upper case first letter of the function so we know it requires ‘new’ to work!
 ---
-### Classes
+### `Classes`
 Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are unique to classes
 ```javascript
 class UserCreator {
