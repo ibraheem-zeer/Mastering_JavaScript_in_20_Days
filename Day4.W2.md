@@ -38,7 +38,7 @@ user3.increment = function() {
 - Problems : Each time we create a new user we make space in our computer's memory for all our data and functions. But our functions are just copies
 
 - Benegits :  Simple and easy
-```javasctipt
+```javascript
 function userCreator(name, score) {
  const newUser = {};
  newUser.name = name;
