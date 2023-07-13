@@ -175,9 +175,25 @@ user1.increment()
 - Problems:
   + 95% of developers have no idea how it works and therefore fail interviews We have to upper case first letter of the function so we know it requires ‘new’ to work!
 
-
-
-
+### Classes
+Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are unique to classes
+```javasctipt
+class UserCreator {
+ constructor (name, score){
+ this.name = name;
+ this.score = score;
+ }
+ increment (){ this.score++; }
+ login (){ console.log("login"); }
+}
+const user1 = new UserCreator("Eva", 9);
+user1.increment();
+```
+- Benefits:
+  + Emerging as a new standard
+  + Feels more like style of other languages
+- Problems:
+  + 99% of developers have no idea how it works and therefore fail interviews But you will not be one of them!
 
 
 
