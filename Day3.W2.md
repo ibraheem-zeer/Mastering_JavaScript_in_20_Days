@@ -72,7 +72,7 @@ Special objects built into JavaScript that get returned immediately when we make
 
 Any code we want to run on the returned data must also be saved on the promise object Added using `.then` method to the hidden property ‘onFulfilment’ Promise objects will automatically trigger the attached function to run (with its
 input being the returned data
-
+---
 - Problems
   + 99% of developers have no idea how they’re working under the hood
   + Debugging becomes super-hard as a result
