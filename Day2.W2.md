@@ -63,9 +63,34 @@ myNewFunction();
 
 **`The bond`** : When a function is defined, it gets a bond to the surrounding Local Memory
 (“Variable Environment”) in which it has been defined
+---
+**Backpaack**
+- We return incrementCounter’s code (function definition) out of outer into global and give it a new name - myNewFunction
+- We maintain the bond to outer’s live local memory - it gets ‘returned out’ attached on the back of incrementCounter’s function definition.
+- So outer’s local memory is now stored attached to myNewFunction - even though outer’s execution context is long gone
+- When we run myNewFunction in global, it will first look in its own local memory first (as we’d expect), but then in myNewFunction’s ‘backpack’
+---
+**we can call this backpack**
+- (C.O.V.E) => Closed over Variable Environment
+- (P.L.S.R.D) => Persistent Lexical Scope Referenced Data
+- Backpack
+- Closure
 
-
-
+```javascript
+function outer (){
+ let counter = 0;
+ function incrementCounter (){
+ counter ++;
+ }
+ return incrementCounter;
+}
+const myNewFunction = outer();
+myNewFunction();
+myNewFunction();
+const anotherFunction = outer();
+anotherFunction();
+anotherFunction();
+```
 
 
 
