@@ -64,9 +64,14 @@ console.log("Me first!");
 - Benefits
   + Super explicit once you understand how it works under-the-hood
 
+---
+# Promises
+Special objects built into JavaScript that get returned immediately when we make a call to a web browser API/feature (e.g. fetch) that’s set up to return promises
 
+---
 
-
+Any code we want to run on the returned data must also be saved on the promise object Added using `.then` method to the hidden property ‘onFulfilment’ Promise objects will automatically trigger the attached function to run (with its
+input being the returned data
 
 
 
