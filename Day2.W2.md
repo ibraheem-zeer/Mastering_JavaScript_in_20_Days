@@ -31,4 +31,77 @@ const generatedFunc = createFunction();
 const result = generatedFunc(3);
 
 // this fun can be returned from other functions in js
+
+//=======================================================================
+
+function outer (){
+ let counter = 0;
+ function incrementCounter (){
+ counter ++;
+ }
+ incrementCounter();
+}
+outer();
+
+// calling a function in the same function call as it was defined
+// where we define your ouer fun determines what data it has access to when you call it
+
+//=========================================================================================
+
+function outer (){
+ let counter = 0;
+ function incrementCounter (){ counter ++; }
+ return incrementCounter;
+}
+const myNewFunction = outer();
+myNewFunction();
+myNewFunction();
+
+// calling a function outside of the function call in which it was defined
 ```
+---
+
+**`The bond`** : When a function is defined, it gets a bond to the surrounding Local Memory
+(“Variable Environment”) in which it has been defined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
