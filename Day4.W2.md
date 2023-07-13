@@ -147,7 +147,7 @@ When we call the function that returns an object with new in front we automate 2
 1. Create a new user object
 2. Return the new user object
 
-```
+```javascript
 function userCreator(name, score) {
  this.name = name;
  this.score = score;
