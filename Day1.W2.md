@@ -152,10 +152,10 @@ return editSrting
 [Q5 part one](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week2-day1-tasks/tasks.md)
 ```javascript
 async function mapAsync(array , inst) {
-    return inst(array)
+    return await inst(array)
 }
 async function addSelf(ele) {
-    return ele.map(ele => ele+ele)
+    return await ele.map(ele => ele+ele)
 }
 const result = mapAsync([1, 2, 3] , addSelf);
 ```
