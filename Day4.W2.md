@@ -54,9 +54,95 @@ user1.increment()
 ```
 ### Using the prototype chain
 Store the increment function in just one object and have the interpreter, if it doesn't find the function on user1, look up to that object to check if it's there Link user1 and functionStore so the interpreter, on not finding .increment, makes sure to check up in functionStore where it would find it
+```javascript
+function userCreator (name, score) {
+ const newUser = Object.create(userFunctionStore);
+ newUser.name = name;
+ newUser.score = score;
+ return newUser;
+};
+const userFunctionStore = {
+ increment: function(){this.score++;},
+ login: function(){console.log("Logged in");}
+};
+const user1 = userCreator("Will", 3);
+const user2 = userCreator("Tim", 5);
+user1.increment();
 
+// if we want to confirm our user1 has the property score
 
+function userCreator (name, score) {
+ const newUser = Object.create(userFunctionStore);
+ newUser.name = name;
+ newUser.score = score;
+ return newUser;
+};
+const userFunctionStore = {
+ increment: function(){this.score++;},
+ login: function(){console.log("Logged in");}
+};
+const user1 = userCreator("Will", 3);
+const user2 = userCreator("Tim", 5);
+user1.hasOwnProperty('score') 
+```
+All objects have a __proto__ property by default which defaults to linking to a big object - Object.prototype full of (somewhat) useful functions
 
+```javascript
+// Declaring & calling a new function inside our ‘method’ increment
+function userCreator(name, score) {
+ const newUser = Object.create(userFunctionStore);
+ newUser.name = name;
+ newUser.score = score;
+ return newUser;
+};
+const userFunctionStore = {
+ increment: function() {
+ this.score++;
+ }
+};
+const user1 = userCreator("Will", 3);
+const user2 = userCreator("Tim", 5);
+user1.increment();
+
+//=========================================================================
+
+// Create and invoke a new function (add1) inside increment
+function userCreator(name, score) {
+ const newUser = Object.create(userFunctionStore);
+ newUser.name = name;
+ newUser.score = score;
+ return newUser;
+};
+const userFunctionStore = {
+ increment: function() {
+ function add1(){ this.score++; }
+ add1()
+ }
+};
+const user1 = userCreator("Will", 3);
+const user2 = userCreator("Tim", 5);
+user1.increment();
+
+//=========================================================================
+
+// Arrow function override the normal this rules
+function userCreator(name, score) {
+ const newUser = Object.create(userFunctionStore);
+ newUser.name = name;
+ newUser.score = score;
+ return newUser;
+};
+const userFunctionStore = {
+ increment: function() {
+ const add1 = () => { this.score++; }
+ add1()
+ }
+};
+const user1 = userCreator("Will", 3);
+const user2 = userCreator("Tim", 5);
+user1.increment();
+
+```
 
 
 
