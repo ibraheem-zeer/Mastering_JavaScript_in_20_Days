@@ -24,4 +24,13 @@ user2.increment = function() {
  user2.score++;
 };
 
+//create user3 using Object.create
+const user3 = Object.create(null);
+user3.name = "Eva";
+user3.score = 9;
+user3.increment = function() {
+ user3.score++;
+};
 ```
+
+**Solutions : **
