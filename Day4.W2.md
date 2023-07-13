@@ -171,9 +171,9 @@ const user1 = new userCreator(“Eva”, 9)
 user1.increment()
 ```
 - Benefits:
- + Faster to write. Often used in practice in professional code
+  + Faster to write. Often used in practice in professional code
 - Problems:
- + 95% of developers have no idea how it works and therefore fail interviews We have to upper case first letter of the function so we know it requires ‘new’ to work!
+  + 95% of developers have no idea how it works and therefore fail interviews We have to upper case first letter of the function so we know it requires ‘new’ to work!
 
 
 
