@@ -141,9 +141,11 @@ const userFunctionStore = {
 const user1 = userCreator("Will", 3);
 const user2 = userCreator("Tim", 5);
 user1.increment();
-
 ```
-
+### Using new
+When we call the function that returns an object with new in front we automate 2 things
+1. Create a new user object
+2. Return the new user object
 
 
 
