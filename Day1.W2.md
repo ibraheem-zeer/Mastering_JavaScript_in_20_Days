@@ -153,11 +153,29 @@ return editSrting
 ```javascript
 async function mapAsync(array , inst) {
     return await inst(array)
-}
+}o
 async function addSelf(ele) {
     return await ele.map(ele => ele+ele)
 }
 const result = mapAsync([1, 2, 3] , addSelf);
+```
+[Q5 part Tw](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week2-day1-tasks/tasks.md)
+```
+function sumRange(start , end , inst) {
+    let output = []
+    let i = inst(start , end)
+    return i
+}
+let start = 1
+let end = 5
+function sum(start , end) {
+    if(start === end){
+        return start
+    }else{
+        return start + sum(start +1 ,end)
+        }
+    }
+const res = sumRange(start , end , sum)
 ```
 
 
