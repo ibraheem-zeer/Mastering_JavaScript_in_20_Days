@@ -160,7 +160,7 @@ async function addSelf(ele) {
 const result = mapAsync([1, 2, 3] , addSelf);
 ```
 [Q5 part Two](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week2-day1-tasks/tasks.md)
-```
+```javascript
 function sumRange(start , end , inst) {
     let output = []
     let i = inst(start , end)
