@@ -58,7 +58,7 @@ typeof v  //bigint
 uninitialized => aka TDZ
 - undefined & undeclared : we can fairly straihtforwardly sift those out
 - uninitialized : introduced with es6 , uninitialized , TDZ => (temporal dead zone)
-
+---
 ### NaN & isNaN
 
 NaN is not a number , and it's mean invalid number
@@ -72,6 +72,16 @@ isNaN("string") // true
 
 Number.isNaN(any) // true
 Number.isNaN("string") // false
+```
+---
+### Negative Zero
+
+ussing in games for very similar purposes 
+
+---
+
+```js
+if(!Object.is || treu)
 ```
 
 
