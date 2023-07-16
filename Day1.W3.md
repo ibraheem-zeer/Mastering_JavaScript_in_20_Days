@@ -13,11 +13,11 @@ Note : in js everything is an object , it is not a correct statment
 - `object`
 - `symbol` , recently add in ES6
 other types or other things may behave like types that
-- undeclared ?
-- null , js calls that a type , but it's a little bit cocky
-- function , fun is subtype of the object type
-- array , arrays is subtype of the object type with numeric indexing
-- bigint
+- `undeclared` ?
+- `null` , js calls that a type , but it's a little bit cocky
+- `function` , fun is subtype of the object type
+- `array` , arrays is subtype of the object type with numeric indexing
+- `bigint`
 
 **Note** only objects type is : oject , function and array 
 ---
@@ -86,17 +86,17 @@ ussing in games for very similar purposes
 
 ---
 Use new : 
-- Object()
-- Array()
-- function()
-- Date()
-- RegExp()
-- Error()
+- `Object()`
+- `Array()`
+- `function()`
+- `Date()`
+- `RegExp()`
+- `Error()`
 
 Don't use new : 
-- String()
-- Number()
-- Boolean()
+- `String()`
+- `Number()`
+- `Boolean()`
 ---
 ```js
 var today = new Date("july 16 , 2023")
@@ -108,36 +108,36 @@ var nyGPA = String(transcript.gpa)
 
 ToPrimitive() : 
 - for number :
-  - valueOf()
-  - toString()
+  - `valueOf()`
+  - `toString()`
 
 - for string :
-  - toString()
-  - valueOf()
+  - `toString()`
+  - `valueOf()`
 ---
 ### toString()
-- null => "null"
-- undefined => "undefined"
-- true => "true"
-- false => "false"
-- 3.144 => "3.144"
-- 0 => "0"
-- -0 => "0"
+- `null` => "null"
+- `undefined` => "undefined"
+- `true` => "true"
+- `false` => "false"
+- `3.144` => "3.144"
+- `0`=> "0"
+- `-0` => "0"
 ---
 ### toNumber()
-- "" => 0
-- "0" => 0
-- "-0" => 0
-- " 009" => 9
-- "3.144" => 3.144
-- "0." => 0
-- ".0" => 0
-- "." => NaN
-- "0xaf" => 175
-- false => 0
-- true => 1
-- null => 0
-- unndefined => NaN
+- `""` => 0
+- `"0"` => 0
+- `"-0"` => 0
+- `" 009"` => 9
+- `"3.144"` => 3.144
+- `"0."` => 0
+- `".0"` => 0
+- `"."` => NaN
+- `"0xaf"` => 175
+- `false` => 0
+- `true` => 1
+- `null` => 0
+- `unndefined` => NaN
 
 ---
 
