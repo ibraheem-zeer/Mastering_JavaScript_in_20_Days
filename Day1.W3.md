@@ -214,7 +214,22 @@ function compareObjects(input1, input2) {
     }
 }
 ```
-
+---
+Q4
+```js
+const complexCoercion = (input) => {
+      if(typeof input === 'number'){
+          input.toString()
+          return `${true} the new string is : ${input}`
+      }else if (typeof input === 'string'){
+          return `${true} the string is : ${input}`
+      }else if(typeof input === 'null' || typeof input === 'undefined') {
+          return `${false} this is : ${input}`
+      }else{
+          return input
+      }
+}
+```
 
 
 
