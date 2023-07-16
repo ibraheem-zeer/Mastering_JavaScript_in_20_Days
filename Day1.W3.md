@@ -123,7 +123,37 @@ ToPrimitive() :
 - 3.144 => "3.144"
 - 0 => "0"
 - -0 => "0"
+---
+### toNumber()
+- "" => 0
+- "0" => 0
+- "-0" => 0
+- " 009" => 9
+- "3.144" => 3.144
+- "0." => 0
+- ".0" => 0
+- "." => NaN
+- "0xaf" => 175
+- false => 0
+- true => 1
+- null => 0
+- unndefined => NaN
 
+---
+
+### Coercion
+
+```
+var num = 16
+
+console.log(`anything ${num.toString()} is a strings haha`)
+// output = anything 16 is a strings haha
+
+//================================================================
+
+console.log(`anything ${String(num)} is a strings haha`)
+// output = anything 16 is a strings haha
+```
 
 
 
