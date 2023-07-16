@@ -102,6 +102,18 @@ Don't use new :
 var today = new Date("july 16 , 2023")
 var nyGPA = String(transcript.gpa)
 ```
+---
+# Coercion
+## Abstract Operations
+
+ToPrimitive() : 
+for number :
+- valueOf()
+- toString()
+
+for string :
+- toString()
+- valueOf()
 
 
 
