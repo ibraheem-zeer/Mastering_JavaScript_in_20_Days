@@ -2,8 +2,8 @@
 this course to help us to understand the algorithms , the DNA of js , to be more
 effective as a developer 
 
-# Types
 
+# Types
 ## Primitive Types
 Note : in js everything is an object , it is not a correct statment 
 - `undegined`
@@ -39,4 +39,42 @@ typeof v;    //object
 
 v = Symbol()
 typeof v;    //symbol
+
+v = null
+typeof v;    //object , whay??
+
+v = function() {}
+typeof v;    //function
+
+v = [1,2,3]
+typeof v;    //object 
+
+v = 42n
+typeof v  //bigint
 ```
+---
+## Emptiness 
+### undefined vs undeclared vs uninitialized
+uninitialized => aka TDZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
