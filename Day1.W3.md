@@ -111,7 +111,7 @@ ToPrimitive() :
   - valueOf()
   - toString()
 
--for string :
+- for string :
   - toString()
   - valueOf()
 
