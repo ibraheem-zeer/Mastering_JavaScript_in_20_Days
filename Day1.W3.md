@@ -80,10 +80,28 @@ ussing in games for very similar purposes
 
 ---
 
-```js
-if(!Object.is || treu)
-```
+### Fundamental Objects
+- Built-In Object
+- Native Functions
 
+---
+Use new : 
+- Object()
+- Array()
+- function()
+- Date()
+- RegExp()
+- Error()
+
+Don't use new : 
+- String()
+- Number()
+- Boolean()
+---
+```js
+var today = new Date("july 16 , 2023")
+var nyGPA = String(transcript.gpa)
+```
 
 
 
