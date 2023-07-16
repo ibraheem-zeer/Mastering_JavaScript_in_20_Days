@@ -107,13 +107,13 @@ var nyGPA = String(transcript.gpa)
 ## Abstract Operations
 
 ToPrimitive() : 
-for number :
-- valueOf()
-- toString()
+- for number :
+  - valueOf()
+  - toString()
 
-for string :
-- toString()
-- valueOf()
+-for string :
+  - toString()
+  - valueOf()
 
 
 
