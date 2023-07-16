@@ -160,7 +160,7 @@ how we access the `.length` of some string value ? :
 it turns out that's called boxing , it's a form of implicit coercion , it's not called out in the same way in the abstract operations 
 ---
 
-(**Asnwer To Quistions**)[https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day1-tasks/tasks.md]
+[**Asnwer To Quistions**](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day1-tasks/tasks.md)
 ---
 Q1
 ```js
