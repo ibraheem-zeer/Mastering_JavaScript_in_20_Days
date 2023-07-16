@@ -158,11 +158,62 @@ console.log(`anything ${String(num)} is a strings haha`)
 ### Boxing
 how we access the `.length` of some string value ? :
 it turns out that's called boxing , it's a form of implicit coercion , it's not called out in the same way in the abstract operations 
+---
 
+**Asnwer To Quistions**
+---
+Q1
+```js
+function convertStringToNumber(input) {
+  if(typeof input === "string" ){
+      return parseInt(input)
+  }
+}
 
+convertStringToNumber("253") // output = 253
 
+typeof convertStringToNumber("253") // output = number
+```
 
-
+---
+Q2
+```js
+const checkNaN = (value) => {
+    let check = value
+    if(!isNaN(check)){
+        return false
+    }else {
+        return true
+    }
+};
+```
+---
+Q3
+```js
+function isEmptyValue(value) {
+  if(value === "" || value === null || value === undefined){
+      return true
+  }else {
+      return false
+  }
+}
+```
+Q4
+```js
+function compareObjects(input1, input2) {
+    const obj1 = input1;
+    const obj2 = input2
+    if(typeof obj1 === 'object' && typeof obj2 === 'object'){
+        if(obj1.value === obj2.value){
+            return true
+        }else {
+            return false
+        }
+    }else {
+        return [obj1 , obj2]
+    }
+}
+```
 
 
 
