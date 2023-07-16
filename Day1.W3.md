@@ -114,8 +114,15 @@ ToPrimitive() :
 - for string :
   - toString()
   - valueOf()
-
-
+---
+### toString()
+- null => "null"
+- undefined => "undefined"
+- true => "true"
+- false => "false"
+- 3.144 => "3.144"
+- 0 => "0"
+- -0 => "0"
 
 
 
