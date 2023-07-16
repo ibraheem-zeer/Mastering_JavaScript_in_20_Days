@@ -143,7 +143,7 @@ ToPrimitive() :
 
 ### Coercion
 
-```
+```js
 var num = 16
 
 console.log(`anything ${num.toString()} is a strings haha`)
