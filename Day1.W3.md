@@ -56,8 +56,23 @@ typeof v  //bigint
 ## Emptiness 
 ### undefined vs undeclared vs uninitialized
 uninitialized => aka TDZ
+- undefined & undeclared : we can fairly straihtforwardly sift those out
+- uninitialized : introduced with es6 , uninitialized , TDZ => (temporal dead zone)
 
+### NaN & isNaN
 
+NaN is not a number , and it's mean invalid number
+```javascript
+var any = Number("n/a")    // NaN
+
+var num = 5 - 'string'    // NaN
+
+isNaN(any)    // true
+isNaN("string") // true
+
+Number.isNaN(any) // true
+Number.isNaN("string") // false
+```
 
 
 
