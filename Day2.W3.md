@@ -20,6 +20,31 @@ name = {age : 22}  // Error : can't assign object to string
 ```
 
 ### custom types
-```
+```typescript
+type std = {name : string}
 
+function getName(stdRec:std : string){
+  return stdRec.name
+}
+
+var fStd:student = {name : "ibraheem"}
+
+var fStdName:string = getName(fStd)
+
+//==============================================
+
+var stdName:string = "ibraheem"
+
+var stdCount:number = 16 - stdName  // error : can't substract string
 ```
+what can `Typescript` do
+- They make types more obvious in code
+- look like other language's type systems
+- Extremely popular these days
+- very sophisticated and good at what they do
+- use "non-JS-standard" syntax
+- require build process, which raises the barrier to entry
+- sophistication can be intimidating to those without prior formal types experience
+- focus more on "static types" than value types
+- only way to have confidence over the runtime behavior is to limit/eliminate dynamic typing
+
