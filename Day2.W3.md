@@ -12,3 +12,14 @@ Caveats:
 2. Annotations are optional
 3. Any part of the application that
 isn't typed introduces uncertainty
+
+```typescript
+var name = "ibraheem"
+
+name = {age : 22}  // Error : can't assign object to string
+```
+
+### custom types
+```
+
+```
