@@ -78,7 +78,7 @@ var teacher = "Kaldoon"
 
 function otherClass() {
   teacher = "Khalid"
-  topic = "AWS"
+  topic = "AWS"           //Reference Error
   console.log("Welcom")
 }
 otherClass();
