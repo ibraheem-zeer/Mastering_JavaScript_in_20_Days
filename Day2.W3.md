@@ -91,6 +91,26 @@ ever heard of it , and Global scope instead of saying nope , error
 */
 ```
 
+---
+### Nested Scope
+
+```js
+var teacher = "anyt" // Red
+
+function oc() { // Red
+    var teacher = "anty"  // Blue
+
+    function ask(qust) { // Blue
+        console.log(teacher , qust)  // teacher => Blue and qust => Green
+    }
+    ask("why ?")
+}
+
+oc()  // output : anty why ?
+
+ask("??")    // Reference Error
+
+```
 
 
 
