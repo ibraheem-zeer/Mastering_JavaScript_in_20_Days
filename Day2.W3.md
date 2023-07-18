@@ -85,7 +85,9 @@ otherClass();
 /*
 what is gonna happen with (topic) variable
 
-go to the global scope , if looking for this marble called topic , ever heard of it , and Global scope instead of saying nope , error
+go to the global scope ,
+if looking for this marble called topic ,
+ever heard of it , and Global scope instead of saying nope , error
 */
 ```
 
