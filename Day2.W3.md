@@ -47,4 +47,67 @@ what can `Typescript` do
 - sophistication can be intimidating to those without prior formal types experience
 - focus more on "static types" than value types
 - only way to have confidence over the runtime behavior is to limit/eliminate dynamic typing
+---
+
+# Scope
+```js
+// we gonna make a plan for a bucket and make a plan for a marble
+
+var teacher = "Khaldoon"  // Red marble
+
+function otherClass() {   // Red marble
+  var teacher = "Khaled"  // Blue marble
+  console.log("Welcom")
+}
+
+function ask() {          // Red marble
+  var question = "why?"   // Green marble
+  console.log(question)   // Green marble
+}
+
+otherClass();    //output = Welcome!
+ask()            //output = why?
+```
+
+
+*Note* :  when we execute the code there's no more declarations for anything , All var's are gone essentially , because we don't need to declare anyting anymore , we already know what that's gonna do 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
