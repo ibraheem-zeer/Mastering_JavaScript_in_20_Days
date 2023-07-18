@@ -68,14 +68,26 @@ function ask() {          // Red marble
 otherClass();    //output = Welcome!
 ask()            //output = why?
 ```
-
-
 *Note* :  when we execute the code there's no more declarations for anything , All var's are gone essentially , because we don't need to declare anyting anymore , we already know what that's gonna do 
 
+---
 
+## Dynamic Global Variables 
+```js
+var teacher = "Kaldoon"
 
+function otherClass() {
+  teacher = "Khalid"
+  topic = "AWS"
+  console.log("Welcom")
+}
+otherClass();
+/*
+what is gonna happen with (topic) variable
 
-
+go to the global scope , if looking for this marble called topic , ever heard of it , and Global scope instead of saying nope , error
+*/
+```
 
 
 
