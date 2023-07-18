@@ -111,6 +111,13 @@ oc()  // output : anty why ?
 ask("??")    // Reference Error
 
 ```
+---
+
+### undefined vs undeclared
+
+- undefined : means a variable exists but it has no value
+- undeclared : never formally declared in any scope that we have accessed to , don't have a marble for it
+
 
 
 
