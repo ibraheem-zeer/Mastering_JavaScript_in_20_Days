@@ -12,3 +12,13 @@ console.log(anotherTeacher)   // ReferenceError
 ```
 Differences between `Declaration` and `Expression` :
 function Declaration add their name they attach their marble to the enclosing scope
+---
+
+anonymous :wee see a functtion expression but without name 
+```js
+var ckickHandler = function() {}    // anonymous func
+
+var keyHandler = function keyHandler() {}    // named func
+
+
+```
