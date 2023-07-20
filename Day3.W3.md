@@ -29,4 +29,6 @@ whay we should alwaays use name-function expressions
 - More debuggable stack traces
 - More self-documenting code
 
+ regular functions and arrow functions have different syntax and behaviors, particularly related to this binding, arguments, and their use as constructors. Regular functions are more versatile, while arrow functions are concise and often used for short, non-method functions and functions that require lexical this binding. The choice between regular functions and arrow functions depends on the specific use case and coding preferences.
+ ---
 the choice between regular functions and arrow functions should primarily be based on how you want to handle this and the coding style you prefer. In terms of performance, the difference is generally insignificant, and other factors such as readability, maintainability, and code clarity should take precedence when deciding which type of function to use
