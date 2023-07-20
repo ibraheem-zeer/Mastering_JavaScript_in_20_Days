@@ -19,6 +19,6 @@ anonymous :wee see a functtion expression but without name
 var ckickHandler = function() {}    // anonymous func
 
 var keyHandler = function keyHandler() {}    // named func
-
-
 ```
+
+**anonymous** function expression is more common and more popular than named function
