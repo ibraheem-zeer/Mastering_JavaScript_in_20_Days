@@ -28,3 +28,5 @@ whay we should alwaays use name-function expressions
 - Reliable function self-reference
 - More debuggable stack traces
 - More self-documenting code
+
+the choice between regular functions and arrow functions should primarily be based on how you want to handle this and the coding style you prefer. In terms of performance, the difference is generally insignificant, and other factors such as readability, maintainability, and code clarity should take precedence when deciding which type of function to use
