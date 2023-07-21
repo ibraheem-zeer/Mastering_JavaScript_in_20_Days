@@ -178,6 +178,7 @@ convertToObj(promisesArray).then((result) => {
 
 ---
 
+Q2
 ```js
 // A)  1 , ReferenceError: b is not defined
 // B)  1 , ReferenceError: b is not defined
@@ -193,7 +194,10 @@ convertToObj(promisesArray).then((result) => {
 */
 ```
 
+Q3
+```js
 
+```
 
 
 
