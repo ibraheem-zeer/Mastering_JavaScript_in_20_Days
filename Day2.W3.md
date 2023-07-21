@@ -196,7 +196,18 @@ Q2
 
 Q3
 ```js
+// A) undefined , ReferenceError: b is not defined
+// B) undefined , ReferenceError: b is not defined
+// C) undefined , ReferenceError: b is not defined
+// D) undefined , ReferenceError: b is not defined
 
+/*
+    console.log(a); will output undefined because a exists within the function scope but is not assigned a value at that point.
+
+    console.log(b); will result in a ReferenceError because b is declared with let inside an if block, and the assignment let b = 2; is not hoisted, making b inaccessible at this point.
+
+    console.log(c); will also result in a ReferenceError because c is declared with const inside the if block, and the assignment const c = 3; is not hoisted, making c inaccessible at this point.
+*/
 ```
 
 
