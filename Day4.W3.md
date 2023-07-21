@@ -213,7 +213,25 @@ there are two style to import Modules
   // Khldoon It's a namespace import , right?
   // this way to import all things in mjs file
   ```
+
+  ---
+
+  Q1
   
+  setTimeout function is executed asynchronously after the for loop has completed its iterations. During the time between the for loop completing and the setTimeout callbacks being executed, the value of i has already reached 5 due to the loop's termination condition i < 5.
+
+  ---
+  to fix :
+  ```js
+for (var i = 0; i < 5; i++) {
+  (function (index) {
+    setTimeout(function() {
+      console.log("value of [i] is: ", index);
+    }, 100);
+  })(i);
+}
+
+  ```
 
 
 
