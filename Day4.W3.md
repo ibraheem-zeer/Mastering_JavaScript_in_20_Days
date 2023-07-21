@@ -20,4 +20,19 @@ teacher;    // undefined
 
 student = "Ibraheem"
 teacher = "Khldoon"
+
+//=======================================
+
+teacher()
+otherTeacher()  // Cannot access 'otherTeacher' before initialization
+
+function teacher() {
+  return "Khldoon"
+}
+
+var otherTeacher = function() {
+  return "Khalid"
+}
+
+
 ```
