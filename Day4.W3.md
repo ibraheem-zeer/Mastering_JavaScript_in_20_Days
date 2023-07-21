@@ -85,7 +85,7 @@ function getTeacher() {
 var teacher = "any1"
 
 {
-  console.log(teacher)
+  console.log(teacher)  // TDZ Error
   let teacher = "any2"
 }
 ```
