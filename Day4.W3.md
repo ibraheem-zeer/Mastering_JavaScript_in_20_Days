@@ -157,11 +157,11 @@ that's our public API , and there are things that are private
 that's things thate nobody on the outside can touch
 
 ```js
-var workshop = (function Module(teacher) {
+var workshop = (function Module(teacher) {    // outer enclosing function (IIFE)
     var publicAPI = { ask, }
     return publicAPI
 
-    function ask(question) {
+    function ask(question) {            // closed over those variables  , in this case closed over teacher variable
         console.log(teacher, question)
     }
 })("Khldoon")
@@ -169,7 +169,7 @@ var workshop = (function Module(teacher) {
 workshop.ask("It's a Module , right?")
 ```
 
-
+**Note :** when we run a `Module` as `IIFE` , that's kind of like saying it's a singleton 
 
 
 
