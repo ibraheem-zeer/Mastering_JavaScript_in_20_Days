@@ -182,7 +182,25 @@ Const is by most accounts even better than let , you should not even use let and
 cost of const is greater than let and var     
 
 
+---
 
+Q1
+```js
+const arrowHOF = (normalFunc) => (...args) => (repetitions) => Array.from({ length: repetitions }, () => normalFunc(...args));
+
+const exampleNormalFunc1 = (a, b, c) => a * (b + c);
+const exampleNormalFunc2 = (x, y) => x * y;
+const exampleNormalFunc3 = (string) => string + " " + string + " " + string + "!";
+
+const hofNormalFunc1 = arrowHOF(exampleNormalFunc1);
+const hofNormalFunc2 = arrowHOF(exampleNormalFunc2);
+const hofNormalFunc3 = arrowHOF(exampleNormalFunc3);
+
+console.log(hofNormalFunc1(3, 4, 5)(2)); // logs [60, 60]
+console.log(hofNormalFunc2(20, 35)(4)); // logs [700, 700, 700, 700]
+console.log(hofNormalFunc3("Meow")(1)); // logs ["Meow Meow Meow!"]
+
+```
 
 
 
