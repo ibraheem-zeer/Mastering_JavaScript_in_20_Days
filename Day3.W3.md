@@ -98,10 +98,10 @@ main porblems that we solbe by don't make stuff availavle
 var teacher = "Ky";
 
 (function(teacher) {
-    console.log(teacher)
+    console.log(teacher)    // su
 })("su")
 
-console.log(teacher)
+console.log(teacher)        // Ky
 
 ````
 
