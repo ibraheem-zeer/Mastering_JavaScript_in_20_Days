@@ -158,9 +158,7 @@ that's things thate nobody on the outside can touch
 
 ```js
 var workshop = (function Module(teacher) {
-    var publicAPI = {
-        ask,
-    }
+    var publicAPI = { ask, }
     return publicAPI
 
     function ask(question) {
