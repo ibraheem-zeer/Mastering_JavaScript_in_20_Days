@@ -93,14 +93,14 @@ var teacher = "any1"
 --- 
 # Closure
 
-to understand Closure we should to understand Lexical scope
+to understand `Closure` we should to understand `Lexical scope`
 
 ---
 
-closure as an idea is actually predating computer science , it actually comes to us from lambda calculus 
+`closure` as an idea is actually predating computer science , it actually comes to us from lambda calculus 
 
 --- 
-**but in programming :** closure is when a function is able to remember and and access it's lexical scope , the variavles outside of itself (free variables )  , even when that function executes in a different scope
+**but in programming :** `closure` is when a function is able to remember and and access it's `lexical scope` , the variavles outside of itself (free variables )  , even when that function executes in a different scope
 
 ```js
 for (var i = 0; i <= 3; i++) {
@@ -146,10 +146,30 @@ for (var i = 0; i <= 3; i++) {
 */
 ```
 ---
-## Modules
+## Modules Pattern
 
-to understand Modules we should to understand closure 
+to understand `Modules` we should to understand `closure` , we don't have `Module` if
+we don't have a `Closure` 
 
+---
+the idea of a module is that there are things that are public 
+that's our public API , and there are things that are private 
+that's things thate nobody on the outside can touch
+
+```js
+var workshop = (function Module(teacher) {
+    var publicAPI = {
+        ask,
+    }
+    return publicAPI
+
+    function ask(question) {
+        console.log(teacher, question)
+    }
+})("Khldoon")
+
+workshop.ask("It's a Module , right?")
+```
 
 
 
