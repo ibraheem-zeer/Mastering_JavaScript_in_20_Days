@@ -212,7 +212,6 @@ Q3
 ---
 
 Q4
-/*
 
 ---
 A) 
@@ -269,7 +268,6 @@ The value of b outside the if block remains the same as the original value, whic
 The value of c outside the if block remains the same as the original value, which is 45.
 
 console.log([a, b, c]);: This logs the values of a, b, and c after the if block, which are [1, 100, 45].
-*/
 
 
 
