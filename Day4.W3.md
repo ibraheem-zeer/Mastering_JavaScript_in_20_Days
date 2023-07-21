@@ -274,7 +274,7 @@ Q4
 ---
 ```js
 const privateCounter = () => {
-  let count = 0; // Private variable, accessible only within the closure
+  let count = 0;
 
   const increment = () => {
     count++;
@@ -284,20 +284,20 @@ const privateCounter = () => {
     return count;
   };
 
-  return { increment, getCount }; // Return an object with the public methods
+  return { increment, getCount };
 };
 
 // Usage
 const counter = privateCounter();
 
-console.log(counter.getCount()); // Output: 0
+console.log(counter.getCount());
 
 counter.increment();
-console.log(counter.getCount()); // Output: 1
+console.log(counter.getCount());
 
 counter.increment();
 counter.increment();
-console.log(counter.getCount()); // Output: 3
+console.log(counter.getCount());
 
 ```
 
