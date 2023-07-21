@@ -92,6 +92,11 @@ var teacher = "any1"
 
 --- 
 # Closure
+
+to understand Closure we should to understand Lexical scope
+
+---
+
 closure as an idea is actually predating computer science , it actually comes to us from lambda calculus 
 
 --- 
@@ -140,7 +145,10 @@ for (var i = 0; i <= 3; i++) {
     whole new iteration of the loop
 */
 ```
+---
+## Modules
 
+to understand Modules we should to understand closure 
 
 
 
