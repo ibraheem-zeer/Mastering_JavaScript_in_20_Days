@@ -49,4 +49,51 @@ otherTeacher = function() {
   return "Khalid"
 }
 
+// =======================================================
+
+let teacher = "any"
+
+otherTeacher()
+
+function otherTeacher() {
+    console.log(teacher)    // undefined  :))))))))))))))))))))
+    let teacher = "any2"
+}
+
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
