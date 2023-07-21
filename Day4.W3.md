@@ -90,6 +90,56 @@ var teacher = "any1"
 }
 ```
 
+--- 
+# Closure
+closure as an idea is actually predating computer science , it actually comes to us from lambda calculus 
+
+--- 
+**but in programming :** closure is when a function is able to remember and and access it's lexical scope , the variavles outside of itself (free variables )  , even when that function executes in a different scope
+
+```js
+for (var i = 0; i <= 3; i++) {
+    setTimeout(() => {
+        console.log(`i : ${i}`)
+    }, i * 1000);
+}
+
+/*
+    there's only one i variable 
+    and we have tree functions
+    if we wanted to have three
+    separate values , how many
+    variables would we need?
+    we need three variables and
+    there is only one , so the
+    it can only have the one value 
+    and in this case it's gonna
+    have the value that occurs at
+    the end of the loop (4)
+    we can't effectively use closure
+    until we separate ourselves from
+    that perception of capturing values
+
+*/
+
+//=======================================
+
+// to solve it
+
+for (var i = 0; i <= 3; i++) {
+    let j = i
+    setTimeout(() => {
+        console.log(`j : ${j}`)
+    }, j * 1000);
+}
+
+/* 
+    j is going to run every time
+    the loop iterates and it's gonna
+    create a whole new j inthat
+    whole new iteration of the loop
+*/
+```
 
 
 
