@@ -149,7 +149,10 @@ const executeInSequenceWithCBs = async (tasks) => {
 executeInSequenceWithCBs(asyncTasks).then(data => console.log(`this is our data ${JSON.stringify(data)}`))
 ```
 
+---
 
+Q2
+---
 
 
 
