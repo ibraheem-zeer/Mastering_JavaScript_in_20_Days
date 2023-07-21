@@ -97,6 +97,58 @@ Prioritize functions in the microtask queue over the Callback queue
 `Web applications:` Asynchronous JavaScript is the backbone of the modern web - letting us build fast ‘non-blocking’ applications
 
 
+---
+
+Q1
+---
+```js
+const task1 = (cb) => setTimeout(() => {
+    const message = "Task 1 has executed successfully!";
+    cb(message);
+}, 3000)
+
+const task2 = (cb) => setTimeout(() => {
+    const message = "Task 2 has executed successfully!";
+    cb(message);
+}, 0)
+
+const task3 = (cb) => setTimeout(() => {
+    const message = "Task 3 has executed successfully!";
+    cb(message);
+}, 1000)
+
+const task4 = (cb) => setTimeout(() => {
+    const message = "Task 4 has executed successfully!";
+    cb(message);
+}, 2000)
+
+const task5 = (cb) => setTimeout(() => {
+    const message = "Task 5 has executed successfully!";
+    cb(message);
+}, 4000)
+
+const asyncTasks = [task1, task2, task3, task4, task5];
+
+const executeInSequenceWithCBs = async (tasks) => {
+    let arr = []
+    for (let i = 0; i < tasks.length; i++) {
+        const myprom = () => new Promise(resolve => {
+            const task = tasks[i]
+            task((message) => {
+                //console.log(message)
+                resolve(message)
+            })
+        })
+        const val = await myprom()
+        arr.push(val)
+        //console.log(`this is value of : ${val}`)
+    }
+    return arr
+}
+
+executeInSequenceWithCBs(asyncTasks).then(data => console.log(`this is our data ${JSON.stringify(data)}`))
+```
+
 
 
 
