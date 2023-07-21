@@ -40,17 +40,30 @@ the choice between regular functions and arrow functions should primarily be bas
 # Advanced Scope
 ## Lexical socpe
 
+is a concept in JavaScript that determines the visibility and accessibility of variables within a block of code based on its physical location (lexically) in the source code during the compile-time, rather than at runtime
+---
+Lexical Scoping Rules:
+
+- Variables declared inside a function are only accessible within that function (and any nested functions inside it). They are not visible outside the function.
+- If a variable is not found in the current function's scope, JavaScript looks up the scope chain to the enclosing (parent) function to find the variable.
+- The process of going up the scope chain continues until the global scope is reached. Variables declared in the global scope are accessible everywhere in the program.
 ```js
-var teacher = "Khaldoon"
-
-function otherClass() {
-    var teacher = "Suzy"
-
-    functioin ask(question) {
-        console.log(teacher , question)
-    }
-    ask("whay?")
+function outerFunction() {
+  const outerVar = "I am from outerFunction";
+  
+  function innerFunction() {
+    const innerVar = "I am from innerFunction";
+    console.log(innerVar); // Accessible here
+    console.log(outerVar); // Accessible here
+  }
+  
+  innerFunction();
+  console.log(innerVar); // Not accessible here (ReferenceError)
 }
+
+outerFunction();
+console.log(outerVar); // Not accessible here (ReferenceError)
+
 ```
 
 
