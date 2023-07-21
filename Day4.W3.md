@@ -51,13 +51,13 @@ otherTeacher = function() {
 
 // =======================================================
 
-let teacher = "any"
+var teacher = "any"
 
 otherTeacher()
 
 function otherTeacher() {
     console.log(teacher)    // undefined  :))))))))))))))))))))
-    let teacher = "any2"
+    var teacher = "any2"
 }
 
 ```
