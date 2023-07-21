@@ -164,9 +164,12 @@ console.log(teacher)        // output = Khlid
 // in the second console.log the output will be same the first one
 ```
 
+**Note :** blocks are not scopes until they have a let or const inside of them 
 
+---
 
-
+**Note :** let is not just some across the board replacment of the var keyword
+but it is an additional tool that we should add on to our existing usage which means there are still reasons to use the var keyword
 
 
 
