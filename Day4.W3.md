@@ -23,7 +23,7 @@ teacher = "Khldoon"
 
 //=======================================
 
-teacher()
+teacher()    // "Khldoon"
 otherTeacher()  // Cannot access 'otherTeacher' before initialization
 
 function teacher() {
