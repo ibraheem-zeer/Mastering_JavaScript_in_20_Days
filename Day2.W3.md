@@ -121,7 +121,60 @@ ask("??")    // Reference Error
 ---
 
 
+Q1
+```ts
+interface HelloWorldResponse {
+    message: string;
+}
 
+interface BooleanResponse {
+    result: boolean;
+}
+
+interface ReturnObjResponse {
+    x: string;
+    y: number;
+}
+
+type PromiseType<T> = T extends Promise<infer R> ? R : never;
+
+const sayHelloWorld = new Promise<HelloWorldResponse>((resolve, reject) => {
+    resolve({ message: "Hello world!" });
+});
+
+const checkBoolean = (boolean: boolean) =>
+    new Promise<BooleanResponse>((resolve, reject) => {
+        if (boolean) {
+            resolve({ result: boolean });
+        } else {
+            reject(`Input is false :(`);
+        }
+    });
+
+const returnObj = new Promise<ReturnObjResponse>((resolve, reject) => {
+    resolve({
+        x: "meow",
+        y: 45,
+    });
+});
+
+const promisesArray: Promise<unknown>[] = [sayHelloWorld, checkBoolean(true), returnObj];
+
+const convertToObj = async <T>(array: Promise<T>[]) => {
+    const obj: Record<string, PromiseType<T> | any> = {};
+
+    await Promise.allSettled(array.map((promise, index) => promise.then(
+        (value) => (obj[`result${index + 1}`] = value),
+        (reason) => (obj[`error${index + 1}`] = reason)
+    )));
+
+    return obj;
+};
+
+convertToObj(promisesArray).then((result) => {
+    console.log(result);
+});
+```
 
 
 
