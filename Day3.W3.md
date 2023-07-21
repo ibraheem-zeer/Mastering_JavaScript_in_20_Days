@@ -86,7 +86,24 @@ anotherTeacher()
 console.log(teacher)        // Kyle
 ```
 
+main porblems that we solbe by don't make stuff availavle
+- naming collision problems
+- if we hide something that means we somebody else can't accidentally of intentionally misuse that thing
+- overloocked , if we hide something , we protect our self for future refactoring 
 
+---
+
+### IIFE
+```js
+var teacher = "Ky";
+
+(function(teacher) {
+    console.log(teacher)
+})("su")
+
+console.log(teacher)
+
+````
 
 
 
