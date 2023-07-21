@@ -72,7 +72,23 @@ function getTeacher() {
 }
 ```
 
+---
 
+```js
+// let doesn't hoist ?
+
+{
+  teacher = "any1"  // TDZ Error  (Temporal Daead Zone error)
+  let teacher
+}
+
+var teacher = "any1"
+
+{
+  console.log(teacher)
+  let teacher = "any2"
+}
+```
 
 
 
