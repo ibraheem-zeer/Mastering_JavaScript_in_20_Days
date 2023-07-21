@@ -193,6 +193,54 @@ executeInParallelWithPromises(apis)
 
 ```
 
+---
+
+Q3
+---
+```js
+const fetchApiData = async (api) => {
+  const response = await fetch(api.apiUrl);
+  const data = await response.json();
+  return { apiName: api.apiName, apiUrl: api.apiUrl, apiData: data };
+};
+
+const executeInSequenceWithPromises = async (apis) => {
+  const results = [];
+  for (const api of apis) {
+    const result = await fetchApiData(api);
+    results.push(result);
+  }
+  return results;
+};
+
+const apis = [
+  {
+    apiName: "products", 
+    apiUrl: "https://dummyjson.com/products",
+  }, 
+  {
+    apiName: "users", 
+    apiUrl: "https://dummyjson.com/users",
+  }, 
+  {
+    apiName: "posts", 
+    apiUrl: "https://dummyjson.com/posts",
+  }, 
+  {
+    apiName: "comments", 
+    apiUrl: "https://dummyjson.com/comments",
+  }
+];
+
+executeInSequenceWithPromises(apis)
+  .then((results) => {
+    console.log(results);
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
+
+```
 
 
 
