@@ -120,12 +120,12 @@ function createCounter(start) {
 
 // Usage:
 const counter1 = createCounter(0);
-console.log(counter1()); // Output: 1
-console.log(counter1()); // Output: 2
+console.log(counter1());
+console.log(counter1());
 
 const counter2 = createCounter(10);
-console.log(counter2()); // Output: 11
-console.log(counter2()); // Output: 12
+console.log(counter2());
+console.log(counter2());
 
 ```
 
