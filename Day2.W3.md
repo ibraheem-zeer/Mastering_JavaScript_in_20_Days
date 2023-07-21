@@ -209,7 +209,65 @@ Q3
     console.log(c); will also result in a ReferenceError because c is declared with const inside the if block, and the assignment const c = 3; is not hoisted, making c inaccessible at this point.
 */
 ```
+---
 
+Q4
+/*
+A) 
+[ 36, 100, 45 ]
+[ 1, 2, 3 ]
+[ 1, 100, 45 ]
+
+=========================
+
+B)
+[ 36, 100, 45 ]
+[ 1, 2, 3 ]
+[ 1, 100, 45 ]
+
+=========================
+
+C)
+[ 36, 100, 45 ]
+[ 1, 2, 3 ]
+[ 1, 100, 45 ]
+
+=========================
+
+D)
+[ 36, 100, 45 ]
+[ 1, 2, 3 ]
+[ 1, 100, 45 ]
+
+
+var a = 36;: The variable a is declared using var, which has function scope. It is assigned the value 36.
+
+let b = 100;: The variable b is declared using let, which has block scope. It is assigned the value 100.
+
+const c = 45;: The variable c is declared using const, which also has block scope. It is assigned the value 45.
+
+console.log([a, b, c]);: This logs the initial values of a, b, and c, which are [36, 100, 45].
+
+Inside the if block: The if block contains new declarations for a, b, and c using var, let, and const, respectively. These declarations have block scope and are separate from the outer declarations.
+
+var a = 1;: The variable a is re-declared using var and assigned the value 1.
+
+let b = 2;: The variable b is re-declared using let and assigned the value 2.
+
+const c = 3;: The variable c is re-declared using const and assigned the value 3.
+
+console.log([a, b, c]);: This logs the values of a, b, and c inside the if block, which are [1, 2, 3].
+
+After the if block: The if block has its own block scope, so the declarations inside it do not affect the outer scope.
+
+Therefore, the value of a outside the if block remains the updated value from inside the if block, which is 1.
+
+The value of b outside the if block remains the same as the original value, which is 100.
+
+The value of c outside the if block remains the same as the original value, which is 45.
+
+console.log([a, b, c]);: This logs the values of a, b, and c after the if block, which are [1, 100, 45].
+*/
 
 
 
