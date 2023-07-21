@@ -214,31 +214,31 @@ Q3
 Q4
 
 ---
-A) 
-[ 36, 100, 45 ]
-[ 1, 2, 3 ]
-[ 1, 100, 45 ]
+A).
+[ 36, 100, 45 ].
+[ 1, 2, 3 ].
+[ 1, 100, 45 ].
 
 =========================
 
-B)
-[ 36, 100, 45 ]
-[ 1, 2, 3 ]
-[ 1, 100, 45 ]
+B).
+[ 36, 100, 45 ].
+[ 1, 2, 3 ].
+[ 1, 100, 45 ].
 
 =========================
 
-C)
-[ 36, 100, 45 ]
-[ 1, 2, 3 ]
-[ 1, 100, 45 ]
+C).
+[ 36, 100, 45 ].
+[ 1, 2, 3 ].
+[ 1, 100, 45 ].
 
 =========================
 
-D)
-[ 36, 100, 45 ]
-[ 1, 2, 3 ]
-[ 1, 100, 45 ]
+D).
+[ 36, 100, 45 ].
+[ 1, 2, 3 ].
+[ 1, 100, 45 ].
 
 
 var a = 36;: The variable a is declared using var, which has function scope. It is assigned the value 36.
@@ -249,8 +249,9 @@ const c = 45;: The variable c is declared using const, which also has block scop
 
 console.log([a, b, c]);: This logs the initial values of a, b, and c, which are [36, 100, 45].
 
+---
 
-
+Q5
 
 
 
