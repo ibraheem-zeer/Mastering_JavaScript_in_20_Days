@@ -186,7 +186,7 @@ export default function ask(question){
 
 **Note :** every thing in module is a privete and if we make somthing public we use export keyword , so anything we export is public 
 
-
+**Note :** impossible to have more than one ES6 Modules in the same file
 
 
 
