@@ -121,8 +121,10 @@ ask("??")    // Reference Error
 ---
 
 [**Asnwer To Quistions**](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day2-tasks/tasks.md)
+---
 
 Q1
+---
 ```ts
 interface HelloWorldResponse {
     message: string;
@@ -180,6 +182,7 @@ convertToObj(promisesArray).then((result) => {
 ---
 
 Q2
+---
 ```js
 // A)  1 , ReferenceError: b is not defined
 // B)  1 , ReferenceError: b is not defined
@@ -196,6 +199,7 @@ Q2
 ```
 
 Q3
+---
 ```js
 // A) undefined , ReferenceError: b is not defined
 // B) undefined , ReferenceError: b is not defined
@@ -213,7 +217,7 @@ Q3
 ---
 
 Q4
-
+---
 ---
 A).
 [ 36, 100, 45 ].
@@ -251,28 +255,3 @@ const c = 45;: The variable c is declared using const, which also has block scop
 console.log([a, b, c]);: This logs the initial values of a, b, and c, which are [36, 100, 45].
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
