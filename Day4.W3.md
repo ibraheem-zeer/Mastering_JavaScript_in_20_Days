@@ -201,6 +201,7 @@ there are two style to import Modules
 
   ask("it's a deafult import , right??")
   // output = Khldoon It's a deafult import , right?
+  // this way to import only ask from mjs file
   ```
 - namespace import
   ```js
@@ -209,8 +210,10 @@ there are two style to import Modules
   import * as workshop from "workshop.mjs"
 
   worksohp.ask("It's a namespace import , right??")
-  //Khldoon It's a namespace import , right?
+  // Khldoon It's a namespace import , right?
+  // this way to import all things in mjs file
   ```
+  
 
 
 
