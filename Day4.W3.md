@@ -34,5 +34,19 @@ var otherTeacher = function() {
   return "Khalid"
 }
 
+//=======================================
+
+function teacher() {
+  return "Khldoon"
+}
+
+var otherTeacher
+
+teacher()        // Khldoon
+otherTeacher()   // TypeError
+
+otherTeacher = function() {
+  return "Khalid"
+}
 
 ```
