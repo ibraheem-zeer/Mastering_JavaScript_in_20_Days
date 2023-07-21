@@ -181,10 +181,13 @@ Const is by most accounts even better than let , you should not even use let and
 ---
 cost of const is greater than let and var     
 
-
+---
+[**Asnwer To Quistions**](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day3-tasks/tasks.md)
 ---
 
+
 Q1
+---
 ```js
 const arrowHOF = (normalFunc) => (...args) => (repetitions) => Array.from({ length: repetitions }, () => normalFunc(...args));
 
@@ -205,6 +208,7 @@ console.log(hofNormalFunc3("Meow")(1)); // logs ["Meow Meow Meow!"]
 ---
 
 Q2
+---
 ```js
 const preserveThis = (func) => func.bind(func);
 
@@ -228,6 +232,7 @@ preservedGreet('Hello'); // Output: "Hello, John!"
 ---
 
 Q3
+---
 - In Example 1)
     - the inner1 function accesses the x variable from the outer1 function's scope.
     - The variable x is declared using var, which has function scope, so it is accessible within the entire outer1 function and any functions defined within it (like inner1).
