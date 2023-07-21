@@ -268,6 +268,38 @@ functions.forEach((func) => func());
 
 ```
 
+---
+
+Q4
+---
+```js
+const privateCounter = () => {
+  let count = 0; // Private variable, accessible only within the closure
+
+  const increment = () => {
+    count++;
+  };
+
+  const getCount = () => {
+    return count;
+  };
+
+  return { increment, getCount }; // Return an object with the public methods
+};
+
+// Usage
+const counter = privateCounter();
+
+console.log(counter.getCount()); // Output: 0
+
+counter.increment();
+console.log(counter.getCount()); // Output: 1
+
+counter.increment();
+counter.increment();
+console.log(counter.getCount()); // Output: 3
+
+```
 
 
 
