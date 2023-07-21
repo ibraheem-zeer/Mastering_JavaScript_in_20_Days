@@ -202,7 +202,28 @@ console.log(hofNormalFunc3("Meow")(1)); // logs ["Meow Meow Meow!"]
 
 ```
 
+---
 
+Q2
+```js
+const preserveThis = (func) => func.bind(func);
+
+// Example object
+const obj = {
+  name: 'John',
+  greet: function (greeting) {
+    console.log(`${greeting}, ${this.name}!`);
+  }
+};
+
+// Wrap the greet function using preserveThis
+const preservedGreet = preserveThis(obj.greet);
+
+// Call the wrapped function as a method of the object
+preservedGreet('Hello'); // Output: "Hello, John!"
+
+
+```
 
 
 
