@@ -249,25 +249,6 @@ const c = 45;: The variable c is declared using const, which also has block scop
 
 console.log([a, b, c]);: This logs the initial values of a, b, and c, which are [36, 100, 45].
 
-Inside the if block: The if block contains new declarations for a, b, and c using var, let, and const, respectively. These declarations have block scope and are separate from the outer declarations.
-
-var a = 1;: The variable a is re-declared using var and assigned the value 1.
-
-let b = 2;: The variable b is re-declared using let and assigned the value 2.
-
-const c = 3;: The variable c is re-declared using const and assigned the value 3.
-
-console.log([a, b, c]);: This logs the values of a, b, and c inside the if block, which are [1, 2, 3].
-
-After the if block: The if block has its own block scope, so the declarations inside it do not affect the outer scope.
-
-Therefore, the value of a outside the if block remains the updated value from inside the if block, which is 1.
-
-The value of b outside the if block remains the same as the original value, which is 100.
-
-The value of c outside the if block remains the same as the original value, which is 45.
-
-console.log([a, b, c]);: This logs the values of a, b, and c after the if block, which are [1, 100, 45].
 
 
 
