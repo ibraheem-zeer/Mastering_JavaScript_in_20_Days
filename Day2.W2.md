@@ -172,7 +172,33 @@ console.log(powerOfThree(2)); // Output: 9 (3^2)
 
 ```
 
+---
 
+Q4
+```js
+function compose(...functions) {
+  return function (arg) {
+    return functions.reduceRight((acc, fn) => fn(acc), arg);
+  };
+}
+
+// Usage:
+function addTwo(x) {
+  return x + 2;
+}
+
+function double(x) {
+  return x * 2;
+}
+
+function subtractFive(x) {
+  return x - 5;
+}
+
+const composedFunction = compose(subtractFive, double, addTwo);
+console.log(composedFunction(10)); // Output: 17 (10 + 2 = 12, 12 * 2 = 24, 24 - 5 = 17)
+
+```
 
 
 
