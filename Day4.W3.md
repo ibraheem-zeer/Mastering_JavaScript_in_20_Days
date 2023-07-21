@@ -188,7 +188,17 @@ export default function ask(question){
 
 **Note :** impossible to have more than one ES6 Modules in the same file
 
+---
+### Bring modules 
 
+there are two style to import Modules 
+- named import syntax
+  ```js
+  // Example
+  import ask from "workshop.mjs"
+  ask("it's a deafult import , right??")
+  ```
+- 
 
 
 
