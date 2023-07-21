@@ -161,7 +161,7 @@ var workshop = (function Module(teacher) {    // outer enclosing function (IIFE)
     var publicAPI = { ask, }
     return publicAPI
 
-    function ask(question) {            // closed over those variables  , in this case closed over teacher variable
+    function ask(question) {// closed over those variables  , in this case closed over teacher variable
         console.log(teacher, question)
     }
 })("Khldoon")
