@@ -301,7 +301,41 @@ console.log(counter.getCount());
 
 ```
 
+---
 
+Q5
+---
+```js
+const generateFibonacci = (count) => {
+  let currentCount = 0;
+  let prevNumber = 0;
+  let currentNumber = 1;
+
+  const getNextFibonacci = () => {
+    if (currentCount < count) {
+      const result = prevNumber;
+      const nextNumber = prevNumber + currentNumber;
+      prevNumber = currentNumber;
+      currentNumber = nextNumber;
+      currentCount++;
+      return result;
+    } else {
+      return undefined;
+    }
+  };
+
+  return getNextFibonacci;
+};
+
+// Usage
+const fibonacciClosure = generateFibonacci(10);
+
+for (let i = 0; i < 10; i++) {
+  const nextNumber = fibonacciClosure();
+  console.log(nextNumber);
+}
+
+```
 
 
 
