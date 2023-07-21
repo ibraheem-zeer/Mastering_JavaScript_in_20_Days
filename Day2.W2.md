@@ -104,13 +104,73 @@ anotherFunction();
 scope : is the rules in any programming lang for at any given line of code , what data do i have available to me 
 
 
+---
+
+Q1
+```js
+function createCounter(start) {
+  let counter = start;
+
+  function increment() {
+    return ++counter;
+  }
+
+  return increment;
+}
+
+// Usage:
+const counter1 = createCounter(0);
+console.log(counter1()); // Output: 1
+console.log(counter1()); // Output: 2
+
+const counter2 = createCounter(10);
+console.log(counter2()); // Output: 11
+console.log(counter2()); // Output: 12
+
+```
 
 
+---
 
+Q2
 
+```js
+function calculateAverage(nums) {
+  let sum = nums.reduce((acc, num) => acc + num, 0);
+  let count = nums.length;
 
+  function getAverage() {
+    return sum / count;
+  }
 
+  return getAverage;
+}
 
+// Usage:
+const averageCalculator = calculateAverage([10, 20, 30, 40, 50]);
+console.log(averageCalculator()); // Output: 30
+```
+
+---
+
+Q3
+```js
+function powerOf(base) {
+  return function (exp) {
+    return Math.pow(base, exp);
+  };
+}
+
+// Usage:
+const powerOfTwo = powerOf(2);
+console.log(powerOfTwo(3)); // Output: 8 (2^3)
+console.log(powerOfTwo(5)); // Output: 32 (2^5)
+
+const powerOfThree = powerOf(3);
+console.log(powerOfThree(4)); // Output: 81 (3^4)
+console.log(powerOfThree(2)); // Output: 9 (3^2)
+
+```
 
 
 
