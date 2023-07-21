@@ -60,6 +60,16 @@ function otherTeacher() {
     var teacher = "any2"
 }
 
+//===================================================================
+
+teacher = "any1"
+var teacher
+
+console.log(getTeacher())    // any1
+
+function getTeacher() {
+    return teacher
+}
 ```
 
 
