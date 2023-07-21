@@ -109,6 +109,7 @@ scope : is the rules in any programming lang for at any given line of code , wha
 [**Asnwer To Quistions**](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week2-day2-tasks/tasks.md)
 ---
 Q1
+---
 ```js
 function createCounter(start) {
   let counter = start;
@@ -135,7 +136,7 @@ console.log(counter2());
 ---
 
 Q2
-
+---
 ```js
 function calculateAverage(nums) {
   let sum = nums.reduce((acc, num) => acc + num, 0);
@@ -156,6 +157,7 @@ console.log(averageCalculator());
 ---
 
 Q3
+---
 ```js
 function powerOf(base) {
   return function (exp) {
@@ -177,6 +179,7 @@ console.log(powerOfThree(2));
 ---
 
 Q4
+---
 ```js
 function compose(...functions) {
   return function (arg) {
@@ -201,30 +204,3 @@ const composedFunction = compose(subtractFive, double, addTwo);
 console.log(composedFunction(10));
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
