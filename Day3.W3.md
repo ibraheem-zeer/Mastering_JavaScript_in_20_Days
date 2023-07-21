@@ -65,6 +65,9 @@ outerFunction();
 console.log(outerVar); // Not accessible here (ReferenceError)
 
 ```
+---
+## Dynamic scope
+ is a concept used in some programming languages, where the visibility of variables is determined by the call stack or the chain of function calls at runtime, rather than their location in the source code , dynamic scope is not a native feature of the language
 
 
 
