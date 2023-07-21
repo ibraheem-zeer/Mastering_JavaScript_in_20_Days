@@ -104,7 +104,29 @@ var teacher = "Ky";
 console.log(teacher)        // Ky
 
 ````
+---
+```js
+// without use IIFE
+var teacher ;
+try {
+    teacher = featchTeacher(1);
+}
+catch (err) {
+    teacher = "ibraheem "
+}
 
+//========================================
+
+// Using IIFE
+
+var teach = (function getTeach() {
+    try {
+        return fetchTeach
+    } catch (err) {
+        return "Khldoon"
+    }
+})();
+```
 
 
 
