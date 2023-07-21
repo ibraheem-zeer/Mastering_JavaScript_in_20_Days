@@ -174,6 +174,8 @@ workshop.ask("It's a Module , right?")
 ### ES6 Modules & NodeJs
 
 ```mjs
+
+this file with .mjs extention
 var teacher = "Khldoon"
 
 export default function ask(question){
