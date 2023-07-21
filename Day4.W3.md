@@ -171,7 +171,16 @@ workshop.ask("It's a Module , right?")
 
 **Note :** when we run a `Module` as `IIFE` , that's kind of like saying it's a singleton 
 
+### ES6 Modules & NodeJs
 
+```mjs
+var teacher = "Khldoon"
+
+export default function ask(question){
+  console.log(teacher , question)
+}
+
+```
 
 
 
