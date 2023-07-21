@@ -41,6 +41,7 @@ the choice between regular functions and arrow functions should primarily be bas
 ## Lexical socpe
 
 is a concept in JavaScript that determines the visibility and accessibility of variables within a block of code based on its physical location (lexically) in the source code during the compile-time, rather than at runtime
+
 ---
 Lexical Scoping Rules:
 
