@@ -126,9 +126,43 @@ var teach = (function getTeach() {
         return "Khldoon"
     }
 })();
+// more clearly but not common
 ```
 
+---
 
+## Block Scoping
+
+```js
+var teacher = "Khldoon";
+
+{
+    let teacher = "Khlid"
+    console.log(teacher)    // output = Khlid
+}
+
+console.log(teacher)        // output = khldoon
+
+/*
+    here we can't use var beacuse historically vars have been
+    attaching themselves to the outer function scope or global scope
+    so a var here would have attached itself to the outer scope rather
+    than the curly prace
+*/
+
+// to see the problem
+
+var teacher = "Khldoon";
+
+{
+    var teacher = "Khlid"
+    console.log(teacher)    // output = Khlid
+}
+
+console.log(teacher)        // output = Khlid
+
+// in the second console.log the output will be same the first one
+```
 
 
 
