@@ -195,10 +195,19 @@ there are two style to import Modules
 - named import syntax
   ```js
   // Example
+
   import ask from "workshop.mjs"
+
   ask("it's a deafult import , right??")
   ```
-- 
+- namespace import
+  ```js
+  // Example
+
+  import * as workshop from "workshop.mjs"
+
+  worksohp.ask("It's a namespace import , right??")
+  ```
 
 
 
