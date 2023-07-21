@@ -83,7 +83,7 @@ function anotherTeacher() {
 
 anotherTeacher()
 
-console.log(teacher)
+console.log(teacher)        // Kyle
 ```
 
 
