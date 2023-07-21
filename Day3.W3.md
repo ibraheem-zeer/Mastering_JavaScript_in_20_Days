@@ -228,13 +228,17 @@ preservedGreet('Hello'); // Output: "Hello, John!"
 ---
 
 Q3
-- In Example 1:
+- In Example 1)
     - the inner1 function accesses the x variable from the outer1 function's scope.
     - The variable x is declared using var, which has function scope, so it is accessible within the entire outer1 function and any functions defined within it (like inner1).
     - When inner1 is called inside outer1, it logs the value of x, which is 10.
     - The output is 10.
 
-
+- In Example 2)
+    - the inner2 function declares its own local x variable with a value of 20, which shadows the x variable from the outer2 function's scope.
+    - The x variable inside inner2 is distinct from the x variable in outer2.
+    - When inner2 is called within outer2, it logs the value of its local x, which is 20.
+    - The output is 20.
 
 
 
