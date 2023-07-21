@@ -27,17 +27,17 @@ teacher()    // "Khldoon"
 otherTeacher()  // Cannot access 'otherTeacher' before initialization
 
 function teacher() {
-  return "Khldoon"
+return "Khldoon"
 }
 
 var otherTeacher = function() {
-  return "Khalid"
+return "Khalid"
 }
 
 //=======================================
 
 function teacher() {
-  return "Khldoon"
+return "Khldoon"
 }
 
 var otherTeacher
@@ -46,7 +46,7 @@ teacher()        // Khldoon
 otherTeacher()   // TypeError
 
 otherTeacher = function() {
-  return "Khalid"
+return "Khalid"
 }
 
 // =======================================================
@@ -56,8 +56,8 @@ var teacher = "any"
 otherTeacher()
 
 function otherTeacher() {
-    console.log(teacher)    // undefined  :))))))))))))))))))))
-    var teacher = "any2"
+  console.log(teacher)    // undefined  :))))))))))))))))))))
+  var teacher = "any2"
 }
 
 //===================================================================
@@ -68,7 +68,7 @@ var teacher
 console.log(getTeacher())    // any1
 
 function getTeacher() {
-    return teacher
+  return teacher
 }
 ```
 
@@ -78,15 +78,15 @@ function getTeacher() {
 // let doesn't hoist ?
 
 {
-  teacher = "any1"  // TDZ Error  (Temporal Daead Zone error)
-  let teacher
+teacher = "any1"  // TDZ Error  (Temporal Daead Zone error)
+let teacher
 }
 
 var teacher = "any1"
 
 {
-  console.log(teacher)  // TDZ Error
-  let teacher = "any2"
+console.log(teacher)  // TDZ Error
+let teacher = "any2"
 }
 ```
 
@@ -104,26 +104,26 @@ to understand `Closure` we should to understand `Lexical scope`
 
 ```js
 for (var i = 0; i <= 3; i++) {
-    setTimeout(() => {
-        console.log(`i : ${i}`)
-    }, i * 1000);
+  setTimeout(() => {
+      console.log(`i : ${i}`)
+  }, i * 1000);
 }
 
 /*
-    there's only one i variable 
-    and we have tree functions
-    if we wanted to have three
-    separate values , how many
-    variables would we need?
-    we need three variables and
-    there is only one , so the
-    it can only have the one value 
-    and in this case it's gonna
-    have the value that occurs at
-    the end of the loop (4)
-    we can't effectively use closure
-    until we separate ourselves from
-    that perception of capturing values
+  there's only one i variable 
+  and we have tree functions
+  if we wanted to have three
+  separate values , how many
+  variables would we need?
+  we need three variables and
+  there is only one , so the
+  it can only have the one value 
+  and in this case it's gonna
+  have the value that occurs at
+  the end of the loop (4)
+  we can't effectively use closure
+  until we separate ourselves from
+  that perception of capturing values
 
 */
 
@@ -132,17 +132,17 @@ for (var i = 0; i <= 3; i++) {
 // to solve it
 
 for (var i = 0; i <= 3; i++) {
-    let j = i
-    setTimeout(() => {
-        console.log(`j : ${j}`)
-    }, j * 1000);
+  let j = i
+  setTimeout(() => {
+      console.log(`j : ${j}`)
+  }, j * 1000);
 }
 
 /* 
-    j is going to run every time
-    the loop iterates and it's gonna
-    create a whole new j inthat
-    whole new iteration of the loop
+  j is going to run every time
+  the loop iterates and it's gonna
+  create a whole new j inthat
+  whole new iteration of the loop
 */
 ```
 ---
@@ -158,12 +158,12 @@ that's things thate nobody on the outside can touch
 
 ```js
 var workshop = (function Module(teacher) {    // outer enclosing function (IIFE)
-    var publicAPI = { ask, }
-    return publicAPI
+  var publicAPI = { ask, }
+  return publicAPI
 
-    function ask(question) {// closed over those variables  , in this case closed over teacher variable
-        console.log(teacher, question)
-    }
+  function ask(question) {// closed over those variables  , in this case closed over teacher variable
+      console.log(teacher, question)
+  }
 })("Khldoon")
 
 workshop.ask("It's a Module , right?")
@@ -180,7 +180,7 @@ workshop.ask("It's a Module , right?")
 var teacher = "Khldoon"
 
 export default function ask(question){
-  console.log(teacher , question)
+console.log(teacher , question)
 }
 
 ```
@@ -194,35 +194,35 @@ export default function ask(question){
 
 there are two style to import Modules 
 - named import syntax
-  ```js
-  // Example
+```js
+// Example
 
-  import ask from "workshop.mjs"
+import ask from "workshop.mjs"
 
-  ask("it's a deafult import , right??")
-  // output = Khldoon It's a deafult import , right?
-  // this way to import only ask from mjs file
-  ```
+ask("it's a deafult import , right??")
+// output = Khldoon It's a deafult import , right?
+// this way to import only ask from mjs file
+```
 - namespace import
-  ```js
-  // Example
+```js
+// Example
 
-  import * as workshop from "workshop.mjs"
+import * as workshop from "workshop.mjs"
 
-  worksohp.ask("It's a namespace import , right??")
-  // Khldoon It's a namespace import , right?
-  // this way to import all things in mjs file
-  ```
+worksohp.ask("It's a namespace import , right??")
+// Khldoon It's a namespace import , right?
+// this way to import all things in mjs file
+```
 
-  ---
+---
 
-  Q1
-  
-  setTimeout function is executed asynchronously after the for loop has completed its iterations. During the time between the for loop completing and the setTimeout callbacks being executed, the value of i has already reached 5 due to the loop's termination condition i < 5.
+Q1
 
-  ---
-  to fix :
-  ```js
+setTimeout function is executed asynchronously after the for loop has completed its iterations. During the time between the for loop completing and the setTimeout callbacks being executed, the value of i has already reached 5 due to the loop's termination condition i < 5.
+
+---
+to fix :
+```js
 for (var i = 0; i < 5; i++) {
   (function (index) {
     setTimeout(function() {
@@ -230,8 +230,7 @@ for (var i = 0; i < 5; i++) {
     }, 100);
   })(i);
 }
-
-  ```
+```
 
 
 
