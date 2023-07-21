@@ -106,7 +106,8 @@ scope : is the rules in any programming lang for at any given line of code , wha
 
 ---
 
-[**Answer to Qustion**](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week2-day2-tasks/tasks.md)
+[**Asnwer To Quistions**](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week2-day2-tasks/tasks.md)
+---
 Q1
 ```js
 function createCounter(start) {
