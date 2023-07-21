@@ -161,7 +161,7 @@ var teacher = "Khldoon";
 
 console.log(teacher)        // output = Khlid
 
-// in the second console.log the output will be same the first one
+// in the second console.l, og the output will be same the first one
 ```
 
 **Note :** blocks are not scopes until they have a let or const inside of them 
@@ -171,10 +171,13 @@ console.log(teacher)        // output = Khlid
 **Note :** let is not just some across the board replacment of the var keyword
 but it is an additional tool that we should add on to our existing usage which means there are still reasons to use the var keyword
 
+---
 
+## Const
+Const is by most accounts even better than let , you should not even use let and you should only use const wherever possible 
 
-
-
+---
+cost of const is greater than let and var     
 
 
 
