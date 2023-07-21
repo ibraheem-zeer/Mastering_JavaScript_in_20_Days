@@ -148,7 +148,7 @@ function calculateAverage(nums) {
 
 // Usage:
 const averageCalculator = calculateAverage([10, 20, 30, 40, 50]);
-console.log(averageCalculator()); // Output: 30
+console.log(averageCalculator());
 ```
 
 ---
@@ -163,12 +163,12 @@ function powerOf(base) {
 
 // Usage:
 const powerOfTwo = powerOf(2);
-console.log(powerOfTwo(3)); // Output: 8 (2^3)
-console.log(powerOfTwo(5)); // Output: 32 (2^5)
+console.log(powerOfTwo(3));
+console.log(powerOfTwo(5));
 
 const powerOfThree = powerOf(3);
-console.log(powerOfThree(4)); // Output: 81 (3^4)
-console.log(powerOfThree(2)); // Output: 9 (3^2)
+console.log(powerOfThree(4));
+console.log(powerOfThree(2));
 
 ```
 
@@ -196,7 +196,7 @@ function subtractFive(x) {
 }
 
 const composedFunction = compose(subtractFive, double, addTwo);
-console.log(composedFunction(10)); // Output: 17 (10 + 2 = 12, 12 * 2 = 24, 24 - 5 = 17)
+console.log(composedFunction(10));
 
 ```
 
