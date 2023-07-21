@@ -217,7 +217,7 @@ worksohp.ask("It's a namespace import , right??")
 ---
 
 Q1
-
+---
 setTimeout function is executed asynchronously after the for loop has completed its iterations. During the time between the for loop completing and the setTimeout callbacks being executed, the value of i has already reached 5 due to the loop's termination condition i < 5.
 
 ---
@@ -232,8 +232,21 @@ for (var i = 0; i < 5; i++) {
 }
 ```
 
+---
 
+Q2
+---
+array is redeclared and initialized to an empty array in each iteration of the for loop. As a result, the array is being reset to an empty state in each iteration before pushing the current value of i into it.
+to fix :
+```js
+let array = [];
 
+for (let i = 0; i < 5; i++) {
+  array.push(i);
+  console.log("Current array is: ", array);
+}
+
+```
 
 
 
