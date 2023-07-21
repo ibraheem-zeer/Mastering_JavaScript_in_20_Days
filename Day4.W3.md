@@ -166,7 +166,7 @@ var workshop = (function Module(teacher) {    // outer enclosing function (IIFE)
     }
 })("Khldoon")
 
-workshop.ask("It's a Module , right?")
+workshop.ask("It's a Module , right?")  // output = Khldoon It's a Module , right?
 ```
 
 **Note :** when we run a `Module` as `IIFE` , that's kind of like saying it's a singleton 
@@ -198,7 +198,7 @@ there are two style to import Modules
 
   import ask from "workshop.mjs"
 
-  ask("it's a deafult import , right??")
+  ask("it's a deafult import , right??")  // output = Khldoon It's a deafult import , right?
   ```
 - namespace import
   ```js
@@ -206,7 +206,7 @@ there are two style to import Modules
 
   import * as workshop from "workshop.mjs"
 
-  worksohp.ask("It's a namespace import , right??")
+  worksohp.ask("It's a namespace import , right??")  //Khldoon It's a namespace import , right?
   ```
 
 
