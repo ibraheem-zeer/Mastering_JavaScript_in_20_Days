@@ -9,4 +9,15 @@ teacher;    // undefined
 
 var student = "Ibraheem"
 var teacher = "Khldoon"
+
+// =====================================
+
+var student ;
+var teacher ;
+
+student;    // undefined
+teacher;    // undefined
+
+student = "Ibraheem"
+teacher = "Khldoon"
 ```
