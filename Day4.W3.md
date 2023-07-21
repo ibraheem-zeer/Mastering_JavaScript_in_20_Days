@@ -248,6 +248,25 @@ for (let i = 0; i < 5; i++) {
 
 ```
 
+---
+
+Q3
+---
+for loop uses var to declare the variable i. As a result, the i variable is function-scoped, and its value is shared across all the function expressions pushed into the functions array. Since the for loop has already completed by the time the functions are executed, the value of i becomes 5 for all the functions.
+
+to fix :
+```js
+let functions = [];
+
+for (let i = 0; i < 5; i++) {
+  functions.push(() => {
+    console.log("Current value of i is:", i);
+  });
+}
+
+functions.forEach((func) => func());
+
+```
 
 
 
