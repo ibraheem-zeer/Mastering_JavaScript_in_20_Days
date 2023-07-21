@@ -251,9 +251,6 @@ console.log([a, b, c]);: This logs the initial values of a, b, and c, which are 
 
 ---
 
-Q5
-
-
 
 
 
