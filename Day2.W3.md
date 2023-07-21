@@ -176,6 +176,23 @@ convertToObj(promisesArray).then((result) => {
 });
 ```
 
+---
+
+```js
+// A)  1 , ReferenceError: b is not defined
+// B)  1 , ReferenceError: b is not defined
+// C)  1 , ReferenceError: b is not defined
+// D)  1 , ReferenceError: b is not defined
+
+/*
+  console.log(a); will output 1, as a is accessible within the whole function due to being declared with var.
+
+  console.log(b); will result in a ReferenceError, as b is not accessible outside the if block due to being declared with let.
+  
+  console.log(c); will also result in a ReferenceError, as c is not accessible outside the if block due to being declared with const
+*/
+```
+
 
 
 
