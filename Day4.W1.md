@@ -174,6 +174,7 @@ const mels = spices.filter(s => s.name.includes("Mel"));
 ---
 ### spread(...)
 Is another neat trick for iterating over arrays it lets us take all the items in an array and spread around
+
 ---
 - We can use it to put all the items from one array inside another array
 - We can also use it to pass all the items from an array as arguments to a function or method
