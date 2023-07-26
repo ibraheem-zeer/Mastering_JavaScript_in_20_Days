@@ -94,6 +94,7 @@ anotherFunction();
 anotherFunction();
 ```
 **Individual backpacks** : if we run outer again and store the returned incrementCounter fun definition in anotherFunction , this new incrementCounter fun was created in a new execution context and threrfore has a brand new independent backpack
+
 ---
 **Clousre gives our fun persistent memories and entrely new toolkit for writing professional code**
 - `Helper functions:` Everyday professional helper functions like ‘once’ and ‘memoize’
